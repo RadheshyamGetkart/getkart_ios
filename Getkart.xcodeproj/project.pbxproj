@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		297783E02D62FE4000645E3A /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297783DF2D62FE4000645E3A /* SignUpView.swift */; };
+		297783E22D6300AD00645E3A /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297783E12D6300AD00645E3A /* Utility.swift */; };
 		F037AEC82D5B0C1D008F83A3 /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F037AEC72D5B0BFF008F83A3 /* OTPView.swift */; };
 		F0CE65152D3794DC00F64674 /* GetkartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CE65142D3794DC00F64674 /* GetkartApp.swift */; };
 		F0CE65172D3794DC00F64674 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CE65162D3794DC00F64674 /* ContentView.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		297783DF2D62FE4000645E3A /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		297783E12D6300AD00645E3A /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Utility.swift; path = Getkart/Utility.swift; sourceTree = SOURCE_ROOT; };
 		F037AEC72D5B0BFF008F83A3 /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
 		F0CE65112D3794DC00F64674 /* Getkart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Getkart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0CE65142D3794DC00F64674 /* GetkartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetkartApp.swift; sourceTree = "<group>"; };
@@ -78,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		297783DE2D62FE2400645E3A /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				297783DF2D62FE4000645E3A /* SignUpView.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
 		F037AEC42D5B0BA4008F83A3 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +108,7 @@
 		F041349D2D3E155000311389 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				297783E12D6300AD00645E3A /* Utility.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -124,6 +137,7 @@
 		F0CE65132D3794DC00F64674 /* Getkart */ = {
 			isa = PBXGroup;
 			children = (
+				297783DE2D62FE2400645E3A /* SignUp */,
 				F0CE653F2D3795E500F64674 /* Info.plist */,
 				F0CE653E2D3795AA00F64674 /* Getkart.entitlements */,
 				F0CE65142D3794DC00F64674 /* GetkartApp.swift */,
@@ -300,6 +314,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				297783E22D6300AD00645E3A /* Utility.swift in Sources */,
+				297783E02D62FE4000645E3A /* SignUpView.swift in Sources */,
 				F0CE65172D3794DC00F64674 /* ContentView.swift in Sources */,
 				F0CE65152D3794DC00F64674 /* GetkartApp.swift in Sources */,
 				F037AEC82D5B0C1D008F83A3 /* OTPView.swift in Sources */,
@@ -477,6 +493,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -509,6 +526,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
