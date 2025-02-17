@@ -6,6 +6,9 @@
 //
 
 import SwiftUI
+import GoogleSignInSwift
+import GoogleSignIn
+import AuthenticationServices
 
 struct LoginView: View {
     @State private var emailPhone: String = "naresh.kumar@getkart.com"
@@ -117,9 +120,7 @@ struct LoginView: View {
                     }
                     
                     HStack {
-                        Button(action:{
-                            
-                        }) {
+                        Button(action:signInWithGoogle) {
                             HStack{
                                 Spacer()
                                 Image("login_Google").resizable().frame(width: 30,height: 30)
@@ -143,9 +144,7 @@ struct LoginView: View {
                         
                     }
                     HStack {
-                        Button(action:{
-                            
-                        }) {
+                        Button(action:signInWithAppleID) {
                             HStack{
                                 Spacer()
                                 Image("login_Apple").resizable().frame(width: 30,height: 30)
@@ -246,6 +245,70 @@ struct LoginView: View {
         // Return true if the phone number is valid and not a repeated digit
         return isValidFormat && !allCharactersAreSame
     }
+    
+   
+    func signInWithGoogle() {
+            // Replace with your client ID.
+            // If using Firebase, you might retrieve it as:
+            // guard let clientID = FirebaseApp.app()?.options.clientID else { return }
+            let clientID = "968056389209-a30r9sqnm5hq5abb56v7null15bnkvh3.apps.googleusercontent.com"
+            
+            let config = GIDConfiguration(clientID: clientID)
+            
+            // Get the root view controller to present the sign-in flow
+            guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+                  let rootViewController = windowScene.windows.first?.rootViewController else {
+                print("Unable to access root view controller.")
+                return
+            }
+            
+            // Start the sign-in flow
+            GIDSignIn.sharedInstance.signIn(withPresenting: rootViewController) {  result, error in
+                if let error = error {
+                    print("Error signing in: \(error.localizedDescription)")
+                    return
+                }
+                
+                // Successful sign-in
+                guard let user = result?.user else { return }
+                let fullName = user.profile?.name ?? "No Name"
+                let email = user.profile?.email ?? "No Email"
+                
+                print("User signed in: \(fullName) (\(email))")
+                
+                // You can now pass this user info to your view model, store tokens, etc.
+            }
+        
+        
+        }
+    func signInWithAppleID(){
+        SignInWithAppleButton(.signUp) { request in
+            request.requestedScopes = [.fullName, .email]
+        } onCompletion: { result in
+            // ...
+            switch result {
+            case .success(let authorization):
+                if let userCredential = authorization.credential as? ASAuthorizationAppleIDCredential {
+                    print(userCredential.user)
+                
+                    if userCredential.authorizedScopes.contains(.fullName) {
+                        print(userCredential.fullName)
+                    }
+                
+                    if userCredential.authorizedScopes.contains(.email) {
+                        print(userCredential.email)
+                    }
+                    
+                }
+            case .failure(let error):
+                print("Could not authenticate: \\(error.localizedDescription)")
+            }
+        }
+    }
+       
+    
+        
+        
 
 }
 

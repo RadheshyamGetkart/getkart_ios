@@ -15,6 +15,10 @@
 		297783ED2D63072800645E3A /* Manrope-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 297783E82D63072800645E3A /* Manrope-SemiBold.ttf */; };
 		297783EE2D63072800645E3A /* Manrope-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 297783E62D63072800645E3A /* Manrope-Medium.ttf */; };
 		297783F02D63174E00645E3A /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297783EF2D63174E00645E3A /* Validator.swift */; };
+		389B85FE4CEFC530154EB9BB /* Pods_Getkart_GetkartUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA4A85840C461549FE6E462 /* Pods_Getkart_GetkartUITests.framework */; };
+		4008D7B8E7B8AC4BCDD18ECB /* Pods_GetkartTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BA73B30CCDFFA4E6DEA0C5 /* Pods_GetkartTests.framework */; };
+		B9693984043334DEC618A827 /* Pods_Getkart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD32E9CC83FEEDD0DEF8B35 /* Pods_Getkart.framework */; };
+		F01E89C62D6344E000ABB25B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F01E89C52D6344E000ABB25B /* GoogleService-Info.plist */; };
 		F037AEC82D5B0C1D008F83A3 /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F037AEC72D5B0BFF008F83A3 /* OTPView.swift */; };
 		F0CE65152D3794DC00F64674 /* GetkartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CE65142D3794DC00F64674 /* GetkartApp.swift */; };
 		F0CE65172D3794DC00F64674 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CE65162D3794DC00F64674 /* LoginView.swift */; };
@@ -44,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17060DC796313E638AD2130D /* Pods-Getkart-GetkartUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Getkart-GetkartUITests.debug.xcconfig"; path = "Target Support Files/Pods-Getkart-GetkartUITests/Pods-Getkart-GetkartUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		243E0D7226E0A02D61750887 /* Pods-Getkart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Getkart.debug.xcconfig"; path = "Target Support Files/Pods-Getkart/Pods-Getkart.debug.xcconfig"; sourceTree = "<group>"; };
 		297783DF2D62FE4000645E3A /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		297783E12D6300AD00645E3A /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Utility.swift; path = Getkart/Utility.swift; sourceTree = SOURCE_ROOT; };
 		297783E42D63072800645E3A /* Manrope-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Bold.ttf"; sourceTree = "<group>"; };
@@ -52,6 +58,13 @@
 		297783E72D63072800645E3A /* Manrope-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Regular.ttf"; sourceTree = "<group>"; };
 		297783E82D63072800645E3A /* Manrope-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-SemiBold.ttf"; sourceTree = "<group>"; };
 		297783EF2D63174E00645E3A /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Validator.swift; path = Getkart/Validator.swift; sourceTree = SOURCE_ROOT; };
+		2FD32E9CC83FEEDD0DEF8B35 /* Pods_Getkart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Getkart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35593C5C4623B7A5E7AFDF5D /* Pods-GetkartTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetkartTests.release.xcconfig"; path = "Target Support Files/Pods-GetkartTests/Pods-GetkartTests.release.xcconfig"; sourceTree = "<group>"; };
+		6EA4A85840C461549FE6E462 /* Pods_Getkart_GetkartUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Getkart_GetkartUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9F80F99251394D24F1754DA /* Pods-GetkartTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetkartTests.debug.xcconfig"; path = "Target Support Files/Pods-GetkartTests/Pods-GetkartTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C2BA73B30CCDFFA4E6DEA0C5 /* Pods_GetkartTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GetkartTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9A40114CF0ECE126A3E892F /* Pods-Getkart-GetkartUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Getkart-GetkartUITests.release.xcconfig"; path = "Target Support Files/Pods-Getkart-GetkartUITests/Pods-Getkart-GetkartUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F01E89C52D6344E000ABB25B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F037AEC72D5B0BFF008F83A3 /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
 		F0CE65112D3794DC00F64674 /* Getkart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Getkart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0CE65142D3794DC00F64674 /* GetkartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetkartApp.swift; sourceTree = "<group>"; };
@@ -66,6 +79,7 @@
 		F0CE653E2D3795AA00F64674 /* Getkart.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Getkart.entitlements; sourceTree = "<group>"; };
 		F0CE653F2D3795E500F64674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F0CE65412D37960400F64674 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		F7E5ED166B971F404A09A2DF /* Pods-Getkart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Getkart.release.xcconfig"; path = "Target Support Files/Pods-Getkart/Pods-Getkart.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +88,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0CE65422D37960400F64674 /* StoreKit.framework in Frameworks */,
+				B9693984043334DEC618A827 /* Pods_Getkart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4008D7B8E7B8AC4BCDD18ECB /* Pods_GetkartTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				389B85FE4CEFC530154EB9BB /* Pods_Getkart_GetkartUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +139,19 @@
 			path = fonts;
 			sourceTree = "<group>";
 		};
+		AEE366F37AB4924950F7D7C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				243E0D7226E0A02D61750887 /* Pods-Getkart.debug.xcconfig */,
+				F7E5ED166B971F404A09A2DF /* Pods-Getkart.release.xcconfig */,
+				17060DC796313E638AD2130D /* Pods-Getkart-GetkartUITests.debug.xcconfig */,
+				C9A40114CF0ECE126A3E892F /* Pods-Getkart-GetkartUITests.release.xcconfig */,
+				A9F80F99251394D24F1754DA /* Pods-GetkartTests.debug.xcconfig */,
+				35593C5C4623B7A5E7AFDF5D /* Pods-GetkartTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F037AEC42D5B0BA4008F83A3 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,13 +159,6 @@
 				F037AEC72D5B0BFF008F83A3 /* OTPView.swift */,
 			);
 			path = SignIn;
-			sourceTree = "<group>";
-		};
-		F041349C2D3E155000311389 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		F041349D2D3E155000311389 /* Utility */ = {
@@ -155,6 +178,7 @@
 				F0CE652E2D3794DF00F64674 /* GetkartUITests */,
 				F0CE65122D3794DC00F64674 /* Products */,
 				F0CE65402D37960400F64674 /* Frameworks */,
+				AEE366F37AB4924950F7D7C0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,6 +195,7 @@
 		F0CE65132D3794DC00F64674 /* Getkart */ = {
 			isa = PBXGroup;
 			children = (
+				F01E89C52D6344E000ABB25B /* GoogleService-Info.plist */,
 				297783E32D63070C00645E3A /* Resources */,
 				297783DE2D62FE2400645E3A /* SignUp */,
 				F0CE653F2D3795E500F64674 /* Info.plist */,
@@ -178,7 +203,6 @@
 				F0CE65142D3794DC00F64674 /* GetkartApp.swift */,
 				F037AEC42D5B0BA4008F83A3 /* SignIn */,
 				F041349D2D3E155000311389 /* Utility */,
-				F041349C2D3E155000311389 /* ViewControllers */,
 				F0CE65182D3794DF00F64674 /* Assets.xcassets */,
 				F0CE651A2D3794DF00F64674 /* Preview Content */,
 			);
@@ -214,6 +238,9 @@
 			isa = PBXGroup;
 			children = (
 				F0CE65412D37960400F64674 /* StoreKit.framework */,
+				2FD32E9CC83FEEDD0DEF8B35 /* Pods_Getkart.framework */,
+				6EA4A85840C461549FE6E462 /* Pods_Getkart_GetkartUITests.framework */,
+				C2BA73B30CCDFFA4E6DEA0C5 /* Pods_GetkartTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -225,9 +252,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0CE65352D3794DF00F64674 /* Build configuration list for PBXNativeTarget "Getkart" */;
 			buildPhases = (
+				9F01E80E639BAA5203FDFA56 /* [CP] Check Pods Manifest.lock */,
 				F0CE650D2D3794DC00F64674 /* Sources */,
 				F0CE650E2D3794DC00F64674 /* Frameworks */,
 				F0CE650F2D3794DC00F64674 /* Resources */,
+				BE6F249956C24E871743DC72 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -242,6 +271,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0CE65382D3794DF00F64674 /* Build configuration list for PBXNativeTarget "GetkartTests" */;
 			buildPhases = (
+				F8B62D0C612D2FF6B773A312 /* [CP] Check Pods Manifest.lock */,
 				F0CE651D2D3794DF00F64674 /* Sources */,
 				F0CE651E2D3794DF00F64674 /* Frameworks */,
 				F0CE651F2D3794DF00F64674 /* Resources */,
@@ -260,9 +290,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0CE653B2D3794DF00F64674 /* Build configuration list for PBXNativeTarget "GetkartUITests" */;
 			buildPhases = (
+				B3A46ECAFC2BC5940EA3D0FE /* [CP] Check Pods Manifest.lock */,
 				F0CE65272D3794DF00F64674 /* Sources */,
 				F0CE65282D3794DF00F64674 /* Frameworks */,
 				F0CE65292D3794DF00F64674 /* Resources */,
+				C7677A2359377372AE6DAC66 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -323,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0CE651C2D3794DF00F64674 /* Preview Assets.xcassets in Resources */,
+				F01E89C62D6344E000ABB25B /* GoogleService-Info.plist in Resources */,
 				F0CE65192D3794DF00F64674 /* Assets.xcassets in Resources */,
 				297783EA2D63072800645E3A /* Manrope-ExtraBold.ttf in Resources */,
 				297783EB2D63072800645E3A /* Manrope-Regular.ttf in Resources */,
@@ -347,6 +380,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9F01E80E639BAA5203FDFA56 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Getkart-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3A46ECAFC2BC5940EA3D0FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Getkart-GetkartUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE6F249956C24E871743DC72 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Getkart/Pods-Getkart-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Getkart/Pods-Getkart-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Getkart/Pods-Getkart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7677A2359377372AE6DAC66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Getkart-GetkartUITests/Pods-Getkart-GetkartUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Getkart-GetkartUITests/Pods-Getkart-GetkartUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Getkart-GetkartUITests/Pods-Getkart-GetkartUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8B62D0C612D2FF6B773A312 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GetkartTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F0CE650D2D3794DC00F64674 /* Sources */ = {
@@ -432,7 +568,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -495,7 +631,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -516,6 +652,7 @@
 		};
 		F0CE65362D3794DF00F64674 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 243E0D7226E0A02D61750887 /* Pods-Getkart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -525,6 +662,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Getkart/Preview Content\"";
 				DEVELOPMENT_TEAM = 4J798VP7SK;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Getkart/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
@@ -548,6 +686,7 @@
 		};
 		F0CE65372D3794DF00F64674 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7E5ED166B971F404A09A2DF /* Pods-Getkart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -557,6 +696,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Getkart/Preview Content\"";
 				DEVELOPMENT_TEAM = 4J798VP7SK;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Getkart/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
@@ -580,6 +720,7 @@
 		};
 		F0CE65392D3794DF00F64674 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9F80F99251394D24F1754DA /* Pods-GetkartTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -600,6 +741,7 @@
 		};
 		F0CE653A2D3794DF00F64674 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35593C5C4623B7A5E7AFDF5D /* Pods-GetkartTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -620,6 +762,7 @@
 		};
 		F0CE653C2D3794DF00F64674 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17060DC796313E638AD2130D /* Pods-Getkart-GetkartUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -638,6 +781,7 @@
 		};
 		F0CE653D2D3794DF00F64674 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9A40114CF0ECE126A3E892F /* Pods-Getkart-GetkartUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
