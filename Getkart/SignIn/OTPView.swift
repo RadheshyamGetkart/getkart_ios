@@ -20,8 +20,8 @@ struct OTPView: View {
                     
                     Text("Skip")
                         .multilineTextAlignment(.center)
-                        .bold()
-                        .font(.system(size: 12.0))
+                        
+                        .font(ManropeFont.manrope(.bold, size: 12.0))
                         .padding(.horizontal)
                         .frame(width: 80,height: 25)
                     
@@ -40,7 +40,7 @@ struct OTPView: View {
             HStack{
                 Text("Sign in with mobile")
                     .bold()
-                    .font(.system(size: 20.0))
+                    .font(ManropeFont.manrope(.bold, size: 20.0))
                     .padding(.horizontal)
                     .frame(height: 50)
                 Spacer()
@@ -48,8 +48,7 @@ struct OTPView: View {
             
             HStack{
                 Text(emailPhone)
-                    .bold()
-                    .font(.system(size: 20.0))
+                    .font(ManropeFont.manrope(.regular, size: 20.0))
                     .padding(.horizontal)
                     .frame(height: 50)
                 
@@ -58,7 +57,7 @@ struct OTPView: View {
                     
                 }){
                     Text("Change")
-                        .font(.system(size: 10.0))
+                        .font(ManropeFont.manrope(.regular, size: 15.0))
                         .foregroundColor(.orange)
                         .underline()
                 }
@@ -68,6 +67,7 @@ struct OTPView: View {
             HStack{
                 Spacer()
                 TextField("Enter OTP", text: $emailPhone)
+                    .font(ManropeFont.manrope(.regular, size: 15.0))
                     .background(.white)
                     .frame(height: 40)
                     .padding(5)
