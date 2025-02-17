@@ -24,9 +24,9 @@ struct SignUpView: View {
                         
                     } label: {
                         
-                        Text("Skip").font(ManropeFont.manrope(.medium, size: 18.0)).frame(width: 100,height: 35).foregroundColor(Color(hex: " #fa7860"))
+                        Text("Skip").font(ManropeFont.manrope(.medium, size: 18.0)).frame(width: 90,height: 32).foregroundColor(Color(hex: " #fa7860"))
                         
-                    }.background(Color(hex: "#f6e7e9")).cornerRadius(17.5).padding(10)
+                    }.background(Color(hex: "#f6e7e9")).cornerRadius(16.0)
                 }
                 VStack (alignment: .leading) {
                     HStack{
