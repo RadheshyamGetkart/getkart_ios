@@ -10,13 +10,16 @@ import SwiftUI
 struct LoginView: View {
     @State private var emailPhone: String = "naresh.kumar@getkart.com"
     @State private var navigateToOTP = false
-
+    @State private var navigateToSignUp = false
     var body: some View {
         NavigationView  {
             VStack {
                 
                 // Hidden NavigationLink for the first screen
                 NavigationLink(destination: OTPView(emailPhone: emailPhone), isActive: $navigateToOTP) {
+                                   //EmptyView()
+                               }
+                NavigationLink(destination: SignUpView(), isActive: $navigateToSignUp) {
                                    //EmptyView()
                                }
                                
@@ -98,7 +101,7 @@ struct LoginView: View {
                             .font(ManropeFont.manrope(.regular, size: 12.0))
                             .padding(.top ,10)
                         Button(action:{
-                            
+                            navigateToSignUp = true
                         }){
                             Text("Sign up")
                                 .font(ManropeFont.manrope(.regular, size: 12.0))
