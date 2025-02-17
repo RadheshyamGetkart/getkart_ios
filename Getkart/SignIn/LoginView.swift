@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LoginView: View {
     @State private var emailPhone: String = ""
     @State private var path = NavigationPath()
     var body: some View {
@@ -18,9 +18,7 @@ struct ContentView: View {
                     Button( action: {
                         
                     }){
-                        
-                        
-                        Text("Skip")
+                            Text("Skip")
                             .multilineTextAlignment(.center)
                             .bold()
                             .font(.system(size: 12.0))
@@ -244,13 +242,11 @@ struct ContentView: View {
         return isValidFormat && !allCharactersAreSame
     }
 
-    
-
 }
 
 
 
 
 #Preview {
-    ContentView()
+    LoginView()
 }

@@ -16,7 +16,7 @@
 		297783EE2D63072800645E3A /* Manrope-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 297783E62D63072800645E3A /* Manrope-Medium.ttf */; };
 		F037AEC82D5B0C1D008F83A3 /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F037AEC72D5B0BFF008F83A3 /* OTPView.swift */; };
 		F0CE65152D3794DC00F64674 /* GetkartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CE65142D3794DC00F64674 /* GetkartApp.swift */; };
-		F0CE65172D3794DC00F64674 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CE65162D3794DC00F64674 /* ContentView.swift */; };
+		F0CE65172D3794DC00F64674 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CE65162D3794DC00F64674 /* LoginView.swift */; };
 		F0CE65192D3794DF00F64674 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0CE65182D3794DF00F64674 /* Assets.xcassets */; };
 		F0CE651C2D3794DF00F64674 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0CE651B2D3794DF00F64674 /* Preview Assets.xcassets */; };
 		F0CE65262D3794DF00F64674 /* GetkartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CE65252D3794DF00F64674 /* GetkartTests.swift */; };
@@ -53,7 +53,7 @@
 		F037AEC72D5B0BFF008F83A3 /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
 		F0CE65112D3794DC00F64674 /* Getkart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Getkart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0CE65142D3794DC00F64674 /* GetkartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetkartApp.swift; sourceTree = "<group>"; };
-		F0CE65162D3794DC00F64674 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F0CE65162D3794DC00F64674 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F0CE65182D3794DF00F64674 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0CE651B2D3794DF00F64674 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F0CE65212D3794DF00F64674 /* GetkartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetkartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +123,7 @@
 		F037AEC42D5B0BA4008F83A3 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
+				F0CE65162D3794DC00F64674 /* LoginView.swift */,
 				F037AEC72D5B0BFF008F83A3 /* OTPView.swift */,
 			);
 			path = SignIn;
@@ -172,7 +173,6 @@
 				F0CE653F2D3795E500F64674 /* Info.plist */,
 				F0CE653E2D3795AA00F64674 /* Getkart.entitlements */,
 				F0CE65142D3794DC00F64674 /* GetkartApp.swift */,
-				F0CE65162D3794DC00F64674 /* ContentView.swift */,
 				F037AEC42D5B0BA4008F83A3 /* SignIn */,
 				F041349D2D3E155000311389 /* Utility */,
 				F041349C2D3E155000311389 /* ViewControllers */,
@@ -352,7 +352,7 @@
 			files = (
 				297783E22D6300AD00645E3A /* Utility.swift in Sources */,
 				297783E02D62FE4000645E3A /* SignUpView.swift in Sources */,
-				F0CE65172D3794DC00F64674 /* ContentView.swift in Sources */,
+				F0CE65172D3794DC00F64674 /* LoginView.swift in Sources */,
 				F0CE65152D3794DC00F64674 /* GetkartApp.swift in Sources */,
 				F037AEC82D5B0C1D008F83A3 /* OTPView.swift in Sources */,
 			);
