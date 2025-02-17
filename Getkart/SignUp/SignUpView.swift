@@ -13,6 +13,8 @@ struct SignUpView: View {
     @State private var username: String = ""
     @State private var password: String = ""
     @State private var showError: Bool = false
+    @Binding var navigateToSignUp: Bool
+
    
     var body: some View {
         
@@ -43,12 +45,13 @@ struct SignUpView: View {
                 
                 VStack (alignment: .leading,spacing: 5) {
                     TextField("Email Address", text: $email).font(ManropeFont.manrope(.regular, size: 16.0))
-                        .padding()
-                        .overlay(RoundedRectangle(cornerRadius: 8).stroke(email.isEmpty ? Color.red : Color.gray, lineWidth: 1))
+                      .frame(height: 55)
+                        .padding([.leading, .trailing])
+                        .overlay(RoundedRectangle(cornerRadius: 8).stroke((email.isEmpty && showError)  ? Color(hex: "#a60404") : Color.gray, lineWidth: 1))
                     
                     if (email.isEmpty || !Validator.validateEmail(email)) && showError {
                         Text("Please enter valid email").font(ManropeFont.manrope(.regular, size: 14.0)).multilineTextAlignment(.leading)
-                            .foregroundColor(.red)
+                            .foregroundColor(Color(hex: "#a60404"))
                             .font(.caption)
                             .padding(.leading, 5)
                     }
@@ -56,13 +59,14 @@ struct SignUpView: View {
                 
                 VStack (alignment: .leading,spacing: 5) {
                     TextField("User Name", text: $username).font(ManropeFont.manrope(.regular, size: 16.0))
-                        .padding()
-                        .overlay(RoundedRectangle(cornerRadius: 8).stroke(username.isEmpty ? Color.red : Color.gray, lineWidth: 1))
+                    .frame(height: 55)
+                        .padding([.leading, .trailing])
+                        .overlay(RoundedRectangle(cornerRadius: 8).stroke((username.isEmpty && showError) ? Color(hex: "#a60404") : Color.gray, lineWidth: 1))
                     
                     
                     if username.isEmpty && showError {
                         Text("Field must not be empty").font(ManropeFont.manrope(.regular, size: 14.0)).multilineTextAlignment(.leading)
-                            .foregroundColor(.red)
+                            .foregroundColor(Color(hex: "#a60404"))
                             .font(.caption)
                             .padding(.leading, 5)
                     }
@@ -72,7 +76,8 @@ struct SignUpView: View {
                     
                     HStack{
                         SecureField("Password", text: $password).font(ManropeFont.manrope(.regular, size: 16.0))
-                            .padding()
+                          .frame(height: 55)
+                            .padding([.leading, .trailing])
                         // .overlay(RoundedRectangle(cornerRadius: 8).stroke(password.isEmpty ? Color.red : Color.gray, lineWidth: 1))
                         Button {
                             
@@ -80,10 +85,12 @@ struct SignUpView: View {
                             Image(systemName: "eye.slash.fill")
                         }.padding(.trailing,10)
                         
-                    }.overlay(RoundedRectangle(cornerRadius: 8).stroke(password.isEmpty ? Color.red : Color.gray, lineWidth: 1))
+                    }.overlay(RoundedRectangle(cornerRadius: 8).stroke((password.isEmpty && showError) ? Color(hex: "#a60404") : Color.gray, lineWidth: 1))
+                   
                     if password.isEmpty && showError {
-                        Text("Field must not be empty").font(ManropeFont.manrope(.regular, size: 14.0)).multilineTextAlignment(.leading)
-                            .foregroundColor(.red)
+                        let msg = password.isEmpty ? "Field must not be empty" : "Password must be 6 character long."
+                        Text(msg).font(ManropeFont.manrope(.regular, size: 14.0)).multilineTextAlignment(.leading)
+                            .foregroundColor(Color(hex: "#a60404"))
                             .font(.caption)
                             .padding(.leading, 5)
                     }
@@ -97,7 +104,7 @@ struct SignUpView: View {
                     }else if  username.isEmpty {
                         showError = true
                         
-                    }else if password.isEmpty{
+                    }else if password.isEmpty || password.count < 6{
                         showError = true
                         
                     }else{
@@ -108,18 +115,21 @@ struct SignUpView: View {
                     Text("Verify Email Address").font(ManropeFont.manrope(.regular, size: 16.0))
                         .foregroundColor(.white)
                         .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(Color.orange)
+                        .frame(maxWidth: .infinity).frame(minHeight:50, maxHeight: 50)
+                        .background(Color(hex: "#ffad33"))
                         .cornerRadius(8)
                 }.padding([.top,.bottom],25)
                 
-                    .disabled(email.isEmpty || username.isEmpty || password.isEmpty)
+                   // .disabled(email.isEmpty || username.isEmpty || password.isEmpty)
                 
                 HStack {
                     Text("Already have an account?").font(ManropeFont.manrope(.bold, size: 16.0))
                         .foregroundColor(.gray)
                     
-                    Button(action: {}) {
+                    Button(action: {
+                        
+                        self.navigateToSignUp = false
+                    }) {
                         Text("Log in").foregroundColor(Color(hex: " #fa7860")).underline().font(ManropeFont.manrope(.medium, size: 16.0))
                             .foregroundColor(.blue)
                     }
@@ -131,11 +141,35 @@ struct SignUpView: View {
                     .foregroundColor(.gray)
                     .padding(.top, 8)
                 
+                
+                    Button(action:{
+                        
+                    }) {
+                        HStack{
+                            Spacer()
+                            Image("login_Google").resizable().frame(width: 30,height: 30)
+                               
+                            Text("Continue with Google")
+                                .font(ManropeFont.manrope(.medium, size: 16.0))
+                                .foregroundColor(.black)
+                                .frame(height: 50)
+                            
+                       Spacer()
+                            
+                        }
+                            .frame(maxWidth: .infinity).frame(minHeight:50, maxHeight: 50) .padding([.leading, .trailing]).overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color.black, lineWidth: 1))
+                        
+                    }.padding(.top,25)
+                    
+
+                
                 Text("By Signing Up /Logging in, You agree to our").font(ManropeFont.manrope(.regular, size: 14.0))
                     .font(.caption)
                     .foregroundColor(.gray)
                     .multilineTextAlignment(.center)
-                    .padding(.top, 8)
+                    .padding(.top, 15)
                 
                 HStack{
                     Button {
@@ -165,7 +199,7 @@ struct SignUpView: View {
     
 
 #Preview {
-    SignUpView()
+    SignUpView(navigateToSignUp: .constant(false))
 }
 
 

@@ -1,0 +1,6 @@
+framework module Pods_GetkartTests {
+  umbrella header "Pods-GetkartTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

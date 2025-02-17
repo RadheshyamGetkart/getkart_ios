@@ -22,7 +22,7 @@ struct LoginView: View {
                 NavigationLink(destination: OTPView(emailPhone: emailPhone), isActive: $navigateToOTP) {
                                    //EmptyView()
                                }
-                NavigationLink(destination: SignUpView(), isActive: $navigateToSignUp) {
+                NavigationLink(destination: SignUpView(navigateToSignUp:$navigateToSignUp).navigationBarBackButtonHidden(true), isActive: $navigateToSignUp) {
                                    //EmptyView()
                                }
                                

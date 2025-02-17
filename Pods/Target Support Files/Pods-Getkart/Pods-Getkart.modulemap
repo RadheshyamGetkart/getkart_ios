@@ -1,0 +1,6 @@
+framework module Pods_Getkart {
+  umbrella header "Pods-Getkart-umbrella.h"
+
+  export *
+  module * { export * }
+}
