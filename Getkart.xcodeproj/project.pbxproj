@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F037AEC82D5B0C1D008F83A3 /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F037AEC72D5B0BFF008F83A3 /* OTPView.swift */; };
+		F0CE65152D3794DC00F64674 /* GetkartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CE65142D3794DC00F64674 /* GetkartApp.swift */; };
+		F0CE65172D3794DC00F64674 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CE65162D3794DC00F64674 /* ContentView.swift */; };
+		F0CE65192D3794DF00F64674 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0CE65182D3794DF00F64674 /* Assets.xcassets */; };
+		F0CE651C2D3794DF00F64674 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0CE651B2D3794DF00F64674 /* Preview Assets.xcassets */; };
+		F0CE65262D3794DF00F64674 /* GetkartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CE65252D3794DF00F64674 /* GetkartTests.swift */; };
+		F0CE65302D3794DF00F64674 /* GetkartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CE652F2D3794DF00F64674 /* GetkartUITests.swift */; };
+		F0CE65322D3794DF00F64674 /* GetkartUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CE65312D3794DF00F64674 /* GetkartUITestsLaunchTests.swift */; };
+		F0CE65422D37960400F64674 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CE65412D37960400F64674 /* StoreKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F0CE65222D3794DF00F64674 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0CE65092D3794DB00F64674 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0CE65102D3794DC00F64674;
+			remoteInfo = Getkart;
+		};
+		F0CE652C2D3794DF00F64674 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0CE65092D3794DB00F64674 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0CE65102D3794DC00F64674;
+			remoteInfo = Getkart;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F037AEC72D5B0BFF008F83A3 /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
+		F0CE65112D3794DC00F64674 /* Getkart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Getkart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0CE65142D3794DC00F64674 /* GetkartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetkartApp.swift; sourceTree = "<group>"; };
+		F0CE65162D3794DC00F64674 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F0CE65182D3794DF00F64674 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0CE651B2D3794DF00F64674 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F0CE65212D3794DF00F64674 /* GetkartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetkartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0CE65252D3794DF00F64674 /* GetkartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetkartTests.swift; sourceTree = "<group>"; };
+		F0CE652B2D3794DF00F64674 /* GetkartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetkartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0CE652F2D3794DF00F64674 /* GetkartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetkartUITests.swift; sourceTree = "<group>"; };
+		F0CE65312D3794DF00F64674 /* GetkartUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetkartUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F0CE653E2D3795AA00F64674 /* Getkart.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Getkart.entitlements; sourceTree = "<group>"; };
+		F0CE653F2D3795E500F64674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F0CE65412D37960400F64674 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0CE650E2D3794DC00F64674 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0CE65422D37960400F64674 /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0CE651E2D3794DF00F64674 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0CE65282D3794DF00F64674 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F037AEC42D5B0BA4008F83A3 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				F037AEC72D5B0BFF008F83A3 /* OTPView.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		F041349C2D3E155000311389 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F041349D2D3E155000311389 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		F0CE65082D3794DB00F64674 = {
+			isa = PBXGroup;
+			children = (
+				F0CE65132D3794DC00F64674 /* Getkart */,
+				F0CE65242D3794DF00F64674 /* GetkartTests */,
+				F0CE652E2D3794DF00F64674 /* GetkartUITests */,
+				F0CE65122D3794DC00F64674 /* Products */,
+				F0CE65402D37960400F64674 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F0CE65122D3794DC00F64674 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0CE65112D3794DC00F64674 /* Getkart.app */,
+				F0CE65212D3794DF00F64674 /* GetkartTests.xctest */,
+				F0CE652B2D3794DF00F64674 /* GetkartUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0CE65132D3794DC00F64674 /* Getkart */ = {
+			isa = PBXGroup;
+			children = (
+				F0CE653F2D3795E500F64674 /* Info.plist */,
+				F0CE653E2D3795AA00F64674 /* Getkart.entitlements */,
+				F0CE65142D3794DC00F64674 /* GetkartApp.swift */,
+				F0CE65162D3794DC00F64674 /* ContentView.swift */,
+				F037AEC42D5B0BA4008F83A3 /* SignIn */,
+				F041349D2D3E155000311389 /* Utility */,
+				F041349C2D3E155000311389 /* ViewControllers */,
+				F0CE65182D3794DF00F64674 /* Assets.xcassets */,
+				F0CE651A2D3794DF00F64674 /* Preview Content */,
+			);
+			path = Getkart;
+			sourceTree = "<group>";
+		};
+		F0CE651A2D3794DF00F64674 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F0CE651B2D3794DF00F64674 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F0CE65242D3794DF00F64674 /* GetkartTests */ = {
+			isa = PBXGroup;
+			children = (
+				F0CE65252D3794DF00F64674 /* GetkartTests.swift */,
+			);
+			path = GetkartTests;
+			sourceTree = "<group>";
+		};
+		F0CE652E2D3794DF00F64674 /* GetkartUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F0CE652F2D3794DF00F64674 /* GetkartUITests.swift */,
+				F0CE65312D3794DF00F64674 /* GetkartUITestsLaunchTests.swift */,
+			);
+			path = GetkartUITests;
+			sourceTree = "<group>";
+		};
+		F0CE65402D37960400F64674 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0CE65412D37960400F64674 /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0CE65102D3794DC00F64674 /* Getkart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0CE65352D3794DF00F64674 /* Build configuration list for PBXNativeTarget "Getkart" */;
+			buildPhases = (
+				F0CE650D2D3794DC00F64674 /* Sources */,
+				F0CE650E2D3794DC00F64674 /* Frameworks */,
+				F0CE650F2D3794DC00F64674 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Getkart;
+			productName = Getkart;
+			productReference = F0CE65112D3794DC00F64674 /* Getkart.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F0CE65202D3794DF00F64674 /* GetkartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0CE65382D3794DF00F64674 /* Build configuration list for PBXNativeTarget "GetkartTests" */;
+			buildPhases = (
+				F0CE651D2D3794DF00F64674 /* Sources */,
+				F0CE651E2D3794DF00F64674 /* Frameworks */,
+				F0CE651F2D3794DF00F64674 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0CE65232D3794DF00F64674 /* PBXTargetDependency */,
+			);
+			name = GetkartTests;
+			productName = GetkartTests;
+			productReference = F0CE65212D3794DF00F64674 /* GetkartTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F0CE652A2D3794DF00F64674 /* GetkartUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0CE653B2D3794DF00F64674 /* Build configuration list for PBXNativeTarget "GetkartUITests" */;
+			buildPhases = (
+				F0CE65272D3794DF00F64674 /* Sources */,
+				F0CE65282D3794DF00F64674 /* Frameworks */,
+				F0CE65292D3794DF00F64674 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0CE652D2D3794DF00F64674 /* PBXTargetDependency */,
+			);
+			name = GetkartUITests;
+			productName = GetkartUITests;
+			productReference = F0CE652B2D3794DF00F64674 /* GetkartUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0CE65092D3794DB00F64674 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					F0CE65102D3794DC00F64674 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					F0CE65202D3794DF00F64674 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = F0CE65102D3794DC00F64674;
+					};
+					F0CE652A2D3794DF00F64674 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = F0CE65102D3794DC00F64674;
+					};
+				};
+			};
+			buildConfigurationList = F0CE650C2D3794DB00F64674 /* Build configuration list for PBXProject "Getkart" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F0CE65082D3794DB00F64674;
+			productRefGroup = F0CE65122D3794DC00F64674 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0CE65102D3794DC00F64674 /* Getkart */,
+				F0CE65202D3794DF00F64674 /* GetkartTests */,
+				F0CE652A2D3794DF00F64674 /* GetkartUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0CE650F2D3794DC00F64674 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0CE651C2D3794DF00F64674 /* Preview Assets.xcassets in Resources */,
+				F0CE65192D3794DF00F64674 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0CE651F2D3794DF00F64674 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0CE65292D3794DF00F64674 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0CE650D2D3794DC00F64674 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0CE65172D3794DC00F64674 /* ContentView.swift in Sources */,
+				F0CE65152D3794DC00F64674 /* GetkartApp.swift in Sources */,
+				F037AEC82D5B0C1D008F83A3 /* OTPView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0CE651D2D3794DF00F64674 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0CE65262D3794DF00F64674 /* GetkartTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0CE65272D3794DF00F64674 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0CE65302D3794DF00F64674 /* GetkartUITests.swift in Sources */,
+				F0CE65322D3794DF00F64674 /* GetkartUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F0CE65232D3794DF00F64674 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0CE65102D3794DC00F64674 /* Getkart */;
+			targetProxy = F0CE65222D3794DF00F64674 /* PBXContainerItemProxy */;
+		};
+		F0CE652D2D3794DF00F64674 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0CE65102D3794DC00F64674 /* Getkart */;
+			targetProxy = F0CE652C2D3794DF00F64674 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F0CE65332D3794DF00F64674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F0CE65342D3794DF00F64674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F0CE65362D3794DF00F64674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Getkart/Getkart.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Getkart/Preview Content\"";
+				DEVELOPMENT_TEAM = 4J798VP7SK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Getkart/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.Getkart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F0CE65372D3794DF00F64674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Getkart/Getkart.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Getkart/Preview Content\"";
+				DEVELOPMENT_TEAM = 4J798VP7SK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Getkart/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.Getkart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F0CE65392D3794DF00F64674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NHBQDLLJN4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GetKart.GetkartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Getkart.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Getkart";
+			};
+			name = Debug;
+		};
+		F0CE653A2D3794DF00F64674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NHBQDLLJN4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GetKart.GetkartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Getkart.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Getkart";
+			};
+			name = Release;
+		};
+		F0CE653C2D3794DF00F64674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NHBQDLLJN4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GetKart.GetkartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Getkart;
+			};
+			name = Debug;
+		};
+		F0CE653D2D3794DF00F64674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NHBQDLLJN4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GetKart.GetkartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Getkart;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0CE650C2D3794DB00F64674 /* Build configuration list for PBXProject "Getkart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0CE65332D3794DF00F64674 /* Debug */,
+				F0CE65342D3794DF00F64674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0CE65352D3794DF00F64674 /* Build configuration list for PBXNativeTarget "Getkart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0CE65362D3794DF00F64674 /* Debug */,
+				F0CE65372D3794DF00F64674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0CE65382D3794DF00F64674 /* Build configuration list for PBXNativeTarget "GetkartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0CE65392D3794DF00F64674 /* Debug */,
+				F0CE653A2D3794DF00F64674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0CE653B2D3794DF00F64674 /* Build configuration list for PBXNativeTarget "GetkartUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0CE653C2D3794DF00F64674 /* Debug */,
+				F0CE653D2D3794DF00F64674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0CE65092D3794DB00F64674 /* Project object */;
+}
