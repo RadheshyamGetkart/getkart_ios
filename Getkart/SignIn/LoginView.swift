@@ -95,6 +95,8 @@ struct LoginView: View {
                         .padding(.top ,10)
                     Button(action:{
                         
+                        SignUpView()
+                        
                     }){
                         Text("Sign up")
                             .font(.system(size: 12.0))

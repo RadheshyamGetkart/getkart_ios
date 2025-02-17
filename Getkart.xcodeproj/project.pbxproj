@@ -14,6 +14,7 @@
 		297783EC2D63072800645E3A /* Manrope-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 297783E42D63072800645E3A /* Manrope-Bold.ttf */; };
 		297783ED2D63072800645E3A /* Manrope-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 297783E82D63072800645E3A /* Manrope-SemiBold.ttf */; };
 		297783EE2D63072800645E3A /* Manrope-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 297783E62D63072800645E3A /* Manrope-Medium.ttf */; };
+		297783F02D63174E00645E3A /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297783EF2D63174E00645E3A /* Validator.swift */; };
 		F037AEC82D5B0C1D008F83A3 /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F037AEC72D5B0BFF008F83A3 /* OTPView.swift */; };
 		F0CE65152D3794DC00F64674 /* GetkartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CE65142D3794DC00F64674 /* GetkartApp.swift */; };
 		F0CE65172D3794DC00F64674 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CE65162D3794DC00F64674 /* LoginView.swift */; };
@@ -50,6 +51,7 @@
 		297783E62D63072800645E3A /* Manrope-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Medium.ttf"; sourceTree = "<group>"; };
 		297783E72D63072800645E3A /* Manrope-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Regular.ttf"; sourceTree = "<group>"; };
 		297783E82D63072800645E3A /* Manrope-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-SemiBold.ttf"; sourceTree = "<group>"; };
+		297783EF2D63174E00645E3A /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Validator.swift; path = Getkart/Validator.swift; sourceTree = SOURCE_ROOT; };
 		F037AEC72D5B0BFF008F83A3 /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
 		F0CE65112D3794DC00F64674 /* Getkart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Getkart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0CE65142D3794DC00F64674 /* GetkartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetkartApp.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				297783E12D6300AD00645E3A /* Utility.swift */,
+				297783EF2D63174E00645E3A /* Validator.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				297783E02D62FE4000645E3A /* SignUpView.swift in Sources */,
 				F0CE65172D3794DC00F64674 /* LoginView.swift in Sources */,
 				F0CE65152D3794DC00F64674 /* GetkartApp.swift in Sources */,
+				297783F02D63174E00645E3A /* Validator.swift in Sources */,
 				F037AEC82D5B0C1D008F83A3 /* OTPView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
