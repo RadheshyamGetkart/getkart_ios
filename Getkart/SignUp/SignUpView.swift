@@ -46,7 +46,7 @@ struct SignUpView: View {
                         .padding()
                         .overlay(RoundedRectangle(cornerRadius: 8).stroke(email.isEmpty ? Color.red : Color.gray, lineWidth: 1))
                     
-                    if email.isEmpty || !Validator.validateEmail(email) {
+                    if (email.isEmpty || !Validator.validateEmail(email)) && showError {
                         Text("Please enter valid email").font(ManropeFont.manrope(.regular, size: 14.0)).multilineTextAlignment(.leading)
                             .foregroundColor(.red)
                             .font(.caption)
@@ -59,7 +59,8 @@ struct SignUpView: View {
                         .padding()
                         .overlay(RoundedRectangle(cornerRadius: 8).stroke(username.isEmpty ? Color.red : Color.gray, lineWidth: 1))
                     
-                    if username.isEmpty {
+                    
+                    if username.isEmpty && showError {
                         Text("Field must not be empty").font(ManropeFont.manrope(.regular, size: 14.0)).multilineTextAlignment(.leading)
                             .foregroundColor(.red)
                             .font(.caption)
@@ -80,7 +81,7 @@ struct SignUpView: View {
                         }.padding(.trailing,10)
                         
                     }.overlay(RoundedRectangle(cornerRadius: 8).stroke(password.isEmpty ? Color.red : Color.gray, lineWidth: 1))
-                    if password.isEmpty {
+                    if password.isEmpty && showError {
                         Text("Field must not be empty").font(ManropeFont.manrope(.regular, size: 14.0)).multilineTextAlignment(.leading)
                             .foregroundColor(.red)
                             .font(.caption)
