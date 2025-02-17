@@ -7,7 +7,8 @@
 import SwiftUI
 
 struct OTPView: View {
-    @State private var emailPhone: String = ""
+    @State var emailPhone: String = ""
+    
     var body: some View {
         VStack {
             HStack{
