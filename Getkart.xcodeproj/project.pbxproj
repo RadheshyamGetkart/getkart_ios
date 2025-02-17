@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		297783E02D62FE4000645E3A /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297783DF2D62FE4000645E3A /* SignUpView.swift */; };
 		297783E22D6300AD00645E3A /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297783E12D6300AD00645E3A /* Utility.swift */; };
+		297783EA2D63072800645E3A /* Manrope-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 297783E52D63072800645E3A /* Manrope-ExtraBold.ttf */; };
+		297783EB2D63072800645E3A /* Manrope-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 297783E72D63072800645E3A /* Manrope-Regular.ttf */; };
+		297783EC2D63072800645E3A /* Manrope-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 297783E42D63072800645E3A /* Manrope-Bold.ttf */; };
+		297783ED2D63072800645E3A /* Manrope-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 297783E82D63072800645E3A /* Manrope-SemiBold.ttf */; };
+		297783EE2D63072800645E3A /* Manrope-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 297783E62D63072800645E3A /* Manrope-Medium.ttf */; };
 		F037AEC82D5B0C1D008F83A3 /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F037AEC72D5B0BFF008F83A3 /* OTPView.swift */; };
 		F0CE65152D3794DC00F64674 /* GetkartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CE65142D3794DC00F64674 /* GetkartApp.swift */; };
 		F0CE65172D3794DC00F64674 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CE65162D3794DC00F64674 /* ContentView.swift */; };
@@ -40,6 +45,11 @@
 /* Begin PBXFileReference section */
 		297783DF2D62FE4000645E3A /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		297783E12D6300AD00645E3A /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Utility.swift; path = Getkart/Utility.swift; sourceTree = SOURCE_ROOT; };
+		297783E42D63072800645E3A /* Manrope-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Bold.ttf"; sourceTree = "<group>"; };
+		297783E52D63072800645E3A /* Manrope-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-ExtraBold.ttf"; sourceTree = "<group>"; };
+		297783E62D63072800645E3A /* Manrope-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Medium.ttf"; sourceTree = "<group>"; };
+		297783E72D63072800645E3A /* Manrope-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Regular.ttf"; sourceTree = "<group>"; };
+		297783E82D63072800645E3A /* Manrope-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-SemiBold.ttf"; sourceTree = "<group>"; };
 		F037AEC72D5B0BFF008F83A3 /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
 		F0CE65112D3794DC00F64674 /* Getkart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Getkart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0CE65142D3794DC00F64674 /* GetkartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetkartApp.swift; sourceTree = "<group>"; };
@@ -90,6 +100,26 @@
 			path = SignUp;
 			sourceTree = "<group>";
 		};
+		297783E32D63070C00645E3A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				297783E92D63072800645E3A /* fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		297783E92D63072800645E3A /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				297783E42D63072800645E3A /* Manrope-Bold.ttf */,
+				297783E52D63072800645E3A /* Manrope-ExtraBold.ttf */,
+				297783E62D63072800645E3A /* Manrope-Medium.ttf */,
+				297783E72D63072800645E3A /* Manrope-Regular.ttf */,
+				297783E82D63072800645E3A /* Manrope-SemiBold.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		F037AEC42D5B0BA4008F83A3 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +167,7 @@
 		F0CE65132D3794DC00F64674 /* Getkart */ = {
 			isa = PBXGroup;
 			children = (
+				297783E32D63070C00645E3A /* Resources */,
 				297783DE2D62FE2400645E3A /* SignUp */,
 				F0CE653F2D3795E500F64674 /* Info.plist */,
 				F0CE653E2D3795AA00F64674 /* Getkart.entitlements */,
@@ -290,6 +321,11 @@
 			files = (
 				F0CE651C2D3794DF00F64674 /* Preview Assets.xcassets in Resources */,
 				F0CE65192D3794DF00F64674 /* Assets.xcassets in Resources */,
+				297783EA2D63072800645E3A /* Manrope-ExtraBold.ttf in Resources */,
+				297783EB2D63072800645E3A /* Manrope-Regular.ttf in Resources */,
+				297783EC2D63072800645E3A /* Manrope-Bold.ttf in Resources */,
+				297783ED2D63072800645E3A /* Manrope-SemiBold.ttf in Resources */,
+				297783EE2D63072800645E3A /* Manrope-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
