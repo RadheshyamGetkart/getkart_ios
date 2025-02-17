@@ -101,7 +101,7 @@ struct LoginView: View {
                         .padding(.top ,10)
                     Button(action:{
                         
-                        SignUpView()
+                        //SignUpView()
                         
                     }){
                         Text("Sign up")
