@@ -80,10 +80,10 @@ struct ProfileView: View {
                         
                     }
 
-                    ProfileOption(icon: "doc.text.fill", text: "Share this App").onTapGesture {
+                    ProfileOption(icon: "share", text: "Share this App").onTapGesture {
                         
                     }
-                    ProfileOption(icon: "doc.text.fill", text: "Rate us").onTapGesture {
+                    ProfileOption(icon: "rate_us", text: "Rate us").onTapGesture {
                         
                     }
 
@@ -97,10 +97,10 @@ struct ProfileView: View {
                     ProfileOption(icon: "doc.text.fill", text: "Terms & Conditions").onTapGesture {
                         
                     }
-                    ProfileOption(icon: "doc.text.fill", text: "Privacy Policy").onTapGesture {
+                    ProfileOption(icon: "privacypolicy", text: "Privacy Policy").onTapGesture {
                         
                     }
-                    ProfileOption(icon: "doc.text.fill", text: "Refunds & Cancellation policy").onTapGesture {
+                    ProfileOption(icon: "privacypolicy", text: "Refunds & Cancellation policy").onTapGesture {
                         
                     }
                   

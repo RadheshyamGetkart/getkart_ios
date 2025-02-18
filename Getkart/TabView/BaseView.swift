@@ -17,14 +17,14 @@ struct BaseView: View   {
                 HomeView()
                     .tabItem {
                         selectedTab == 0 ? Image("home_active") : Image("home")
-                        Text("Home").font(ManropeFont.manrope(.regular, size: 16.0))
+                        Text("Home").font(Font.manrope(.regular, size: 16.0))
                     }
                     .tag(0)
                 
                 ChatView()
                     .tabItem {
                         selectedTab == 1 ? Image("chat_active") : Image("chat")
-                        Text("Chat").font(ManropeFont.manrope(.regular, size: 16.0))
+                        Text("Chat").font(Font.manrope(.regular, size: 16.0))
                     }
                     .tag(1)
                 
@@ -32,14 +32,14 @@ struct BaseView: View   {
                 MyAdsView()
                     .tabItem {
                         selectedTab == 2 ? Image("myads_active") : Image("myads")
-                        Text("My ads").font(ManropeFont.manrope(.regular, size: 16.0))
+                        Text("My ads").font(Font.manrope(.regular, size: 16.0))
                     }
                     .tag(2)
                 
                 ProfileView()
                     .tabItem {
                         selectedTab == 3 ? Image("profile_active") : Image("profile")
-                        Text("Profile").font(ManropeFont.manrope(.regular, size: 16.0))
+                        Text("Profile").font(Font.manrope(.regular, size: 16.0))
                     }
                     .tag(3)
             }.accentColor(.orange)
