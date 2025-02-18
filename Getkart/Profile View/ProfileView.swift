@@ -22,10 +22,10 @@ struct ProfileView: View {
                 
                 Text("My Profile").padding(.leading,10)
                 Spacer()
-            }.frame(height:((keyWindow?.windowScene?.statusBarManager?.statusBarFrame.size.height ?? 0.0) + 44.0)).background()
-            
+            }.frame(height:((keyWindow?.windowScene?.statusBarManager?.statusBarFrame.size.height ?? 0.0))).background()
+            //+ 44.0
             ScrollView {
-                VStack(alignment: .leading, spacing: 20) {
+                VStack(alignment: .leading, spacing: 5) {
                     HStack {
                         Image(systemName: "person.circle")
                             .resizable()
@@ -41,7 +41,7 @@ struct ProfileView: View {
                         Spacer()
                         Button(action: {}) {
                             Text("Login")
-                                .padding().frame(width: 110, height: 35)
+                                .padding().frame(width: 100, height: 35)
                                 .overlay(
                                     RoundedRectangle(cornerRadius: 10)
                                         .stroke(Color.gray, lineWidth: 1)
@@ -56,23 +56,23 @@ struct ProfileView: View {
                     ProfileOption(icon: "crown.fill", text: "My Boost Ads").onTapGesture {
                         
                     }
-                    ProfileOption(icon: "play.rectangle.fill", text: "Subscription").onTapGesture {
+                    ProfileOption(icon: "subscription", text: "Subscription").onTapGesture {
                         
                     }
-                    ProfileOption(icon: "creditcard.fill", text: "Transaction History").onTapGesture {
+                    ProfileOption(icon: "transaction", text: "Transaction History").onTapGesture {
                         
                     }
-                    ProfileOption(icon: "globe", text: "Language").onTapGesture {
+                    ProfileOption(icon: "language", text: "Language").onTapGesture {
                         
                     }
-                    ProfileToggleOption(icon: "sun.max.fill", text: "Dark Theme")
-                    ProfileOption(icon: "bell.fill", text: "Notifications").onTapGesture {
+                    ProfileToggleOption(icon: "dark_theme", text: "Dark Theme")
+                    ProfileOption(icon: "notification", text: "Notifications").onTapGesture {
                         
                     }
-                    ProfileOption(icon: "doc.text.fill", text: "Blogs").onTapGesture {
+                    ProfileOption(icon: "article", text: "Blogs").onTapGesture {
                         
                     }
-                    ProfileOption(icon: "doc.text.fill", text: "Favorites").onTapGesture {
+                    ProfileOption(icon: "like_fill", text: "Favorites").onTapGesture {
                         
                     }
 
@@ -87,14 +87,14 @@ struct ProfileView: View {
                         
                     }
 
-                    ProfileOption(icon: "doc.text.fill", text: "Contact us").onTapGesture {
+                    ProfileOption(icon: "contact_us", text: "Contact us").onTapGesture {
                         
                     }
                     
-                    ProfileOption(icon: "doc.text.fill", text: "About us").onTapGesture {
+                    ProfileOption(icon: "about_us", text: "About us").onTapGesture {
                         
                     }
-                    ProfileOption(icon: "doc.text.fill", text: "Terms & Conditions").onTapGesture {
+                    ProfileOption(icon: "t_c", text: "Terms & Conditions").onTapGesture {
                         
                     }
                     ProfileOption(icon: "privacypolicy", text: "Privacy Policy").onTapGesture {
@@ -103,6 +103,8 @@ struct ProfileView: View {
                     ProfileOption(icon: "privacypolicy", text: "Refunds & Cancellation policy").onTapGesture {
                         
                     }
+                    
+                    //delete_account
                   
 
                     Spacer()
@@ -129,7 +131,7 @@ struct ProfileOption: View {
     
     var body: some View {
         HStack {
-            Image(systemName: icon)
+            Image(icon)
                 .foregroundColor(.orange)
                 .frame(width: 30, height: 30)
                 .background(Color(.systemYellow).opacity(0.2))
@@ -153,7 +155,7 @@ struct ProfileToggleOption: View {
     
     var body: some View {
         HStack {
-            Image(systemName: icon)
+            Image(icon)
                 .foregroundColor(.orange)
                 .frame(width: 30, height: 30)
                 .background(Color(.systemYellow).opacity(0.2))
@@ -161,7 +163,7 @@ struct ProfileToggleOption: View {
             Text(text)
                 .font(.body)
             Spacer()
-            Toggle("", isOn: $isOn)
+            Toggle("", isOn: $isOn).tint(.orange)
         }
         .padding()
         .background(Color(.white))

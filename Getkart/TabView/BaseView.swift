@@ -13,15 +13,18 @@ struct BaseView: View   {
     var body: some View {
         ZStack {
             TabView(selection: $selectedTab) {
-               
-                HomeView()
+                NavigationView{
+                    HomeView()
+                }
                     .tabItem {
                         selectedTab == 0 ? Image("home_active") : Image("home")
                         Text("Home").font(Font.manrope(.regular, size: 16.0))
                     }
                     .tag(0)
-                
-                ChatView()
+                NavigationView{
+                    
+                    ChatView()
+                }
                     .tabItem {
                         selectedTab == 1 ? Image("chat_active") : Image("chat")
                         Text("Chat").font(Font.manrope(.regular, size: 16.0))
@@ -29,14 +32,19 @@ struct BaseView: View   {
                     .tag(1)
                 
                 Spacer()
-                MyAdsView()
+                NavigationView{
+                    
+                    MyAdsView()
+                }
                     .tabItem {
                         selectedTab == 2 ? Image("myads_active") : Image("myads")
                         Text("My ads").font(Font.manrope(.regular, size: 16.0))
                     }
                     .tag(2)
-                
-                ProfileView()
+                NavigationView{
+                    
+                    ProfileView()
+                }
                     .tabItem {
                         selectedTab == 3 ? Image("profile_active") : Image("profile")
                         Text("Profile").font(Font.manrope(.regular, size: 16.0))
