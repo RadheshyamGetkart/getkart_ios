@@ -11,7 +11,7 @@ struct OTPView: View {
     
     var body: some View {
         VStack {
-            /*
+            
             HStack{
                 Spacer()
                 Button( action: {
@@ -36,7 +36,7 @@ struct OTPView: View {
             
             HStack{
                 Text("Sign in with mobile")
-                font.manrope(.bold, size: 20)
+                font(Font.manrope(.bold, size: 20))
                     .padding(.horizontal)
                     .frame(height: 50)
                 Spacer()
@@ -48,7 +48,7 @@ struct OTPView: View {
                     .padding(.horizontal)
                     .frame(height: 50)
                 
-               
+                
                 Button(action:{
                     
                 }){
@@ -85,11 +85,12 @@ struct OTPView: View {
                     .background(.orange)
                     .cornerRadius(10)
                 
-                    
+                
             }
             Spacer()
-            */
+            
         }
+        
     }
     func validateOTP(){
         

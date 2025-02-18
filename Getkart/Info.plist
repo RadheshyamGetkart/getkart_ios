@@ -19,11 +19,11 @@
 	<string>968056389209-a30r9sqnm5hq5abb56v7null15bnkvh3.apps.googleusercontent.com</string>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Manrope-Bold</string>
-		<string>Manrope-ExtraBold</string>
-		<string>Manrope-Medium</string>
-		<string>Manrope-Regular</string>
-		<string>Manrope-SemiBold</string>
+		<string>Manrope-Bold.ttf</string>
+		<string>Manrope-ExtraBold.ttf</string>
+		<string>Manrope-Medium.ttf</string>
+		<string>Manrope-Regular.ttf</string>
+		<string>Manrope-SemiBold.ttf</string>
 	</array>
 	<key>UIBackgroundModes</key>
 	<array>

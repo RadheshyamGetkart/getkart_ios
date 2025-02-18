@@ -10,8 +10,8 @@ import SwiftUI
 @main
 struct GetkartApp: App {
     var body: some Scene {
-        WindowGroup {
-            BaseView()
+            WindowGroup {
+            LoginView()
         }
     }
 }

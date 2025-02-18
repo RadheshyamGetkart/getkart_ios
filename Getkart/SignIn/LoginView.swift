@@ -123,10 +123,10 @@ struct LoginView: View {
                         Button(action:signInWithGoogle) {
                             HStack{
                                 Spacer()
-                                Image("login_Google").resizable().frame(width: 30,height: 30)
-                                    .padding(.trailing ,10)
+                                Image("login_Google").resizable().frame(width: 10,height: 10)
+                                    .padding(.trailing ,5)
                                 Text("Continue with Google")
-                                    .font(Font.manrope(.extraBold, size: 15.0))
+                                    .font(Font.manrope(.bold, size: 18.0))
                                     .foregroundColor(.black)
                                     .frame(height: 50)
                                 
