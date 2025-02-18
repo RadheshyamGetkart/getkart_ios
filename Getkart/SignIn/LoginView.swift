@@ -34,7 +34,7 @@ struct LoginView: View {
                         }){
                             Text("Skip")
                                 .multilineTextAlignment(.center)
-                                .font(ManropeFont.manrope(.bold, size: 12.0))
+                                .font(Font.manrope(.bold, size: 15))
                                 .padding(.horizontal)
                                 .frame(width: 80,height: 25)
                             
@@ -49,7 +49,7 @@ struct LoginView: View {
                     }
                     HStack{
                         Text("Welcome")
-                            .font(ManropeFont.manrope(.bold, size: 20.0))
+                            .font(Font.manrope(.bold, size: 20.0))
                             .padding(.horizontal)
                             .frame(height: 50)
                         Spacer()
@@ -57,7 +57,7 @@ struct LoginView: View {
                     
                     HStack {
                         Text("Login to Getkart")
-                            .font(ManropeFont.manrope(.regular, size: 15.0))
+                            .font(Font.manrope(.regular, size: 15.0))
                             .padding(.horizontal)
                         Spacer()
                     }
@@ -65,10 +65,10 @@ struct LoginView: View {
                     HStack{
                         Spacer()
                         TextField("Enter Email or Phone", text: $emailPhone)
-                            .font(ManropeFont.manrope(.regular, size: 15.0))
+                            .font(Font.manrope(.regular, size: 15.0))
                             .background(.white)
-                            .frame(height: 40)
-                            .padding(5)
+                            .frame(height: 50)
+                            .padding([.leading, .trailing])
                             .overlay(
                                 RoundedRectangle(cornerRadius: 10)
                                     .stroke(Color.gray, lineWidth: 1)
@@ -88,7 +88,7 @@ struct LoginView: View {
                     HStack{
                         Button( action: loginWithEmailPhone){
                             Text("Continue")
-                                .font(ManropeFont.manrope(.bold, size: 15.0))
+                                .font(Font.manrope(.bold, size: 15.0))
                                 
                                 .frame(width: (UIScreen.main.bounds.size.width - 60),height: 50)
                             
@@ -101,13 +101,13 @@ struct LoginView: View {
                     
                     HStack{
                         Text("Don't have an account?")
-                            .font(ManropeFont.manrope(.regular, size: 12.0))
+                            .font(Font.manrope(.regular, size: 12.0))
                             .padding(.top ,10)
                         Button(action:{
                             navigateToSignUp = true
                         }){
                             Text("Sign up")
-                                .font(ManropeFont.manrope(.regular, size: 12.0))
+                                .font(Font.manrope(.regular, size: 12.0))
                                 .foregroundColor(.orange)
                                 .underline()
                         }
@@ -116,7 +116,7 @@ struct LoginView: View {
                     }
                     HStack {
                         Text("Or sign in with")
-                            .font(ManropeFont.manrope(.regular, size: 12.0))      .padding(.top ,10)
+                            .font(Font.manrope(.regular, size: 12.0))      .padding(.top ,10)
                     }
                     
                     HStack {
@@ -126,7 +126,7 @@ struct LoginView: View {
                                 Image("login_Google").resizable().frame(width: 30,height: 30)
                                     .padding(.trailing ,10)
                                 Text("Continue with Google")
-                                    .font(ManropeFont.manrope(.regular, size: 15.0))
+                                    .font(Font.manrope(.extraBold, size: 15.0))
                                     .foregroundColor(.black)
                                     .frame(height: 50)
                                 
@@ -144,14 +144,20 @@ struct LoginView: View {
                         
                     }
                     HStack {
-                        Button(action:signInWithAppleID) {
+                        SignInWithAppleButton()
+                                        .frame(height: 50)
+                                        .padding()
+                                        
+                        /*Button(action:{
+                            
+                        }) {
                             HStack{
                                 Spacer()
                                 Image("login_Apple").resizable().frame(width: 30,height: 30)
                                     .padding(.trailing ,10)
                                     .frame(width: 30, height: 30)
                                 Text("Continue with Apple")
-                                    .font(ManropeFont.manrope(.regular, size: 15.0))
+                                    .font(Font.manrope(.regular, size: 15.0))
                                     .foregroundColor(.black).frame(height: 50)
                                 
                                 Spacer()
@@ -162,14 +168,14 @@ struct LoginView: View {
                             .padding()
                             
                             
-                        }
+                        }*/
                         
                     }
                 }
                 Spacer()
                 HStack {
                     Text("By Signning Up/Logging in, you agree to our")
-                        .font(ManropeFont.manrope(.regular, size: 10.0))
+                        .font(Font.manrope(.regular, size: 10.0))
                         .padding(.horizontal)
                 }
                 
@@ -179,20 +185,20 @@ struct LoginView: View {
                         
                     }){
                         Text("Terms of Service")
-                            .font(ManropeFont.manrope(.regular, size: 12.0))
+                            .font(Font.manrope(.regular, size: 12.0))
                             .foregroundColor(.orange)
                             .underline()
                     }
                     
                     Text("and")
-                        .font(ManropeFont.manrope(.regular, size: 12.0))
+                        .font(Font.manrope(.regular, size: 12.0))
                     
                     
                     Button(action:{
                         
                     }){
                         Text("Privacy Policy")
-                            .font(ManropeFont.manrope(.regular, size: 12.0))
+                            .font(Font.manrope(.regular, size: 12.0))
                             .foregroundColor(.orange)
                             .underline()
                     }
@@ -251,9 +257,7 @@ struct LoginView: View {
             // Replace with your client ID.
             // If using Firebase, you might retrieve it as:
             // guard let clientID = FirebaseApp.app()?.options.clientID else { return }
-            let clientID = "968056389209-a30r9sqnm5hq5abb56v7null15bnkvh3.apps.googleusercontent.com"
             
-            let config = GIDConfiguration(clientID: clientID)
             
             // Get the root view controller to present the sign-in flow
             guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
@@ -281,7 +285,7 @@ struct LoginView: View {
         
         
         }
-    func signInWithAppleID(){
+    /*func signInWithAppleID(){
         SignInWithAppleButton(.signUp) { request in
             request.requestedScopes = [.fullName, .email]
         } onCompletion: { result in
@@ -304,7 +308,9 @@ struct LoginView: View {
                 print("Could not authenticate: \\(error.localizedDescription)")
             }
         }
-    }
+    }*/
+    
+    
        
     
         
@@ -313,6 +319,59 @@ struct LoginView: View {
 }
 
 
+
+struct SignInWithAppleButton: UIViewRepresentable {
+    func makeUIView(context: Context) -> ASAuthorizationAppleIDButton {
+        let button = ASAuthorizationAppleIDButton(type: .continue, style: .whiteOutline)
+        button.cornerRadius = 10
+        button.addTarget(context.coordinator, action: #selector(Coordinator.handleSignInWithApple), for: .touchUpInside)
+        return button
+    }
+
+    func updateUIView(_ uiView: ASAuthorizationAppleIDButton, context: Context) {}
+
+    func makeCoordinator() -> Coordinator {
+        Coordinator()
+    }
+
+    class Coordinator: NSObject, ASAuthorizationControllerDelegate, ASAuthorizationControllerPresentationContextProviding {
+        @objc func handleSignInWithApple() {
+            let request = ASAuthorizationAppleIDProvider().createRequest()
+            request.requestedScopes = [.fullName, .email]
+
+            let controller = ASAuthorizationController(authorizationRequests: [request])
+            controller.delegate = self
+            controller.presentationContextProvider = self
+            controller.performRequests()
+        }
+
+        // MARK: - ASAuthorizationControllerDelegate
+        func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
+            if let appleIDCredential = authorization.credential as? ASAuthorizationAppleIDCredential {
+                let userId = appleIDCredential.user
+                let givenName = appleIDCredential.fullName?.givenName ?? ""
+                let familyName = appleIDCredential.fullName?.familyName ?? ""
+                let email = appleIDCredential.email ?? ""
+
+                print("User ID: \(userId)")
+                print("Name: \(givenName) \(familyName)")
+                print("Email: \(email)")
+            }
+        }
+
+        func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: Error) {
+            print("Sign in with Apple failed: \(error.localizedDescription)")
+        }
+
+        // MARK: - ASAuthorizationControllerPresentationContextProviding
+        func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
+            guard let window = UIApplication.shared.windows.first else {
+                fatalError("No window available for presentation")
+            }
+            return window
+        }
+    }
+}
 
 
 #Preview {

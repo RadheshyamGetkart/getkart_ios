@@ -11,6 +11,7 @@ struct OTPView: View {
     
     var body: some View {
         VStack {
+            /*
             HStack{
                 Spacer()
                 Button( action: {
@@ -19,10 +20,6 @@ struct OTPView: View {
                     
                     
                     Text("Skip")
-                        .multilineTextAlignment(.center)
-                        
-                        .font(ManropeFont.manrope(.bold, size: 12.0))
-                        .padding(.horizontal)
                         .frame(width: 80,height: 25)
                     
                     
@@ -39,8 +36,7 @@ struct OTPView: View {
             
             HStack{
                 Text("Sign in with mobile")
-                    .bold()
-                    .font(ManropeFont.manrope(.bold, size: 20.0))
+                font.manrope(.bold, size: 20)
                     .padding(.horizontal)
                     .frame(height: 50)
                 Spacer()
@@ -48,7 +44,7 @@ struct OTPView: View {
             
             HStack{
                 Text(emailPhone)
-                    .font(ManropeFont.manrope(.regular, size: 20.0))
+                    .font(Font.manrope(.regular, size: 20.0))
                     .padding(.horizontal)
                     .frame(height: 50)
                 
@@ -57,7 +53,7 @@ struct OTPView: View {
                     
                 }){
                     Text("Change")
-                        .font(ManropeFont.manrope(.regular, size: 15.0))
+                        .font(Font.manrope(.regular, size: 15.0))
                         .foregroundColor(.orange)
                         .underline()
                 }
@@ -67,7 +63,7 @@ struct OTPView: View {
             HStack{
                 Spacer()
                 TextField("Enter OTP", text: $emailPhone)
-                    .font(ManropeFont.manrope(.regular, size: 15.0))
+                    .font(Font.manrope(.regular, size: 15.0))
                     .background(.white)
                     .frame(height: 40)
                     .padding(5)
@@ -92,6 +88,7 @@ struct OTPView: View {
                     
             }
             Spacer()
+            */
         }
     }
     func validateOTP(){
