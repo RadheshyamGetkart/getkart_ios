@@ -28,6 +28,8 @@
 		B9693984043334DEC618A827 /* Pods_Getkart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD32E9CC83FEEDD0DEF8B35 /* Pods_Getkart.framework */; };
 		F01E89C62D6344E000ABB25B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F01E89C52D6344E000ABB25B /* GoogleService-Info.plist */; };
 		F037AEC82D5B0C1D008F83A3 /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F037AEC72D5B0BFF008F83A3 /* OTPView.swift */; };
+		F07CC7692D648EFC0037BD5C /* MyLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07CC7682D648EEB0037BD5C /* MyLocationView.swift */; };
+		F07CC76B2D6499E70037BD5C /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07CC76A2D6499DF0037BD5C /* LocationManager.swift */; };
 		F0CE65152D3794DC00F64674 /* GetkartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CE65142D3794DC00F64674 /* GetkartApp.swift */; };
 		F0CE65172D3794DC00F64674 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CE65162D3794DC00F64674 /* LoginView.swift */; };
 		F0CE65192D3794DF00F64674 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0CE65182D3794DF00F64674 /* Assets.xcassets */; };
@@ -82,6 +84,8 @@
 		C9A40114CF0ECE126A3E892F /* Pods-Getkart-GetkartUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Getkart-GetkartUITests.release.xcconfig"; path = "Target Support Files/Pods-Getkart-GetkartUITests/Pods-Getkart-GetkartUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F01E89C52D6344E000ABB25B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F037AEC72D5B0BFF008F83A3 /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
+		F07CC7682D648EEB0037BD5C /* MyLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLocationView.swift; sourceTree = "<group>"; };
+		F07CC76A2D6499DF0037BD5C /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		F0CE65112D3794DC00F64674 /* Getkart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Getkart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0CE65142D3794DC00F64674 /* GetkartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetkartApp.swift; sourceTree = "<group>"; };
 		F0CE65162D3794DC00F64674 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -230,6 +234,8 @@
 			children = (
 				F0CE65162D3794DC00F64674 /* LoginView.swift */,
 				F037AEC72D5B0BFF008F83A3 /* OTPView.swift */,
+				F07CC7682D648EEB0037BD5C /* MyLocationView.swift */,
+				F07CC76A2D6499DF0037BD5C /* LocationManager.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -571,6 +577,8 @@
 			files = (
 				29D94E3A2D6496CC007D3649 /* BlockedUserView.swift in Sources */,
 				297783FD2D63527B00645E3A /* HomeView.swift in Sources */,
+				F07CC7692D648EFC0037BD5C /* MyLocationView.swift in Sources */,
+				F07CC76B2D6499E70037BD5C /* LocationManager.swift in Sources */,
 				297784092D63546C00645E3A /* ProfileView.swift in Sources */,
 				297783E22D6300AD00645E3A /* Utility.swift in Sources */,
 				297783E02D62FE4000645E3A /* SignUpView.swift in Sources */,

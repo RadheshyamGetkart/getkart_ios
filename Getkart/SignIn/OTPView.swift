@@ -8,9 +8,14 @@ import SwiftUI
 
 struct OTPView: View {
     @State var emailPhone: String = ""
-    
+    @State var otp: String = ""
+    @Environment(\.presentationMode) var presentationMode
+    @State private var navigateMyLocation = false
     var body: some View {
         VStack {
+            NavigationLink(destination: MyLocationView(), isActive: $navigateMyLocation) {
+                               //EmptyView()
+                           }
             
             HStack{
                 Spacer()
@@ -36,11 +41,12 @@ struct OTPView: View {
             
             HStack{
                 Text("Sign in with mobile")
-                font(Font.manrope(.bold, size: 20))
+                    .font(Font.manrope(.bold, size: 20.0))
                     .padding(.horizontal)
                     .frame(height: 50)
                 Spacer()
             }.padding(.top ,100)
+            
             
             HStack{
                 Text(emailPhone)
@@ -50,7 +56,7 @@ struct OTPView: View {
                 
                 
                 Button(action:{
-                    
+                    presentationMode.wrappedValue.dismiss()
                 }){
                     Text("Change")
                         .font(Font.manrope(.regular, size: 15.0))
@@ -62,7 +68,7 @@ struct OTPView: View {
             
             HStack{
                 Spacer()
-                TextField("Enter OTP", text: $emailPhone)
+                TextField("Enter OTP", text: $otp)
                     .font(Font.manrope(.regular, size: 15.0))
                     .background(.white)
                     .frame(height: 40)
@@ -77,8 +83,7 @@ struct OTPView: View {
             HStack{
                 Button( action: validateOTP){
                     Text("Continue")
-                        .bold()
-                        .font(.system(size: 12.0))
+                        .font(Font.manrope(.regular, size: 15.0))
                         .frame(width: (UIScreen.main.bounds.size.width - 60),height: 40)
                         .padding([.leading,.trailing],10)
                 }.foregroundColor(.white)
@@ -94,6 +99,7 @@ struct OTPView: View {
     }
     func validateOTP(){
         
+        navigateMyLocation = true
     }
 }
 

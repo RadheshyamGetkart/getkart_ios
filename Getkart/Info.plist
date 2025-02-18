@@ -30,5 +30,24 @@
 		<string>fetch</string>
 		<string>remote-notification</string>
 	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSAllowsArbitraryLoadsInWebContent</key>
+		<true/>
+	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>This app requires access to the camera for adding ads images and user&apos;s profile picture.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>This app uses your location to show relevant local ads and listings items. For example, it may display ads for nearby items based on your current location and also when you add or update an item.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This app uses your location to display relevant local ads and listings items. For example, it shows the geographic distribution of ads in your area to help you find nearby ads or choose optimal locations for your own ads.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>We are using microphone to send audio messages in chat functionality</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>We need access to add files to your photo library.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This app requires access to the photo library because we upload profile picture and ads images</string>
 </dict>
 </plist>

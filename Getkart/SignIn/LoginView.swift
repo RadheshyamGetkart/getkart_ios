@@ -82,6 +82,7 @@ struct LoginView: View {
                         Spacer()
                         Text("0/50")
                             .padding(.trailing, 20).foregroundColor(.gray)
+                        
                     }.padding(.top ,-10)
                     
                     
