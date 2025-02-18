@@ -15,7 +15,6 @@ struct SignUpView: View {
     @State private var showError: Bool = false
     @Binding var navigateToSignUp: Bool
 
-   
     var body: some View {
         
         VStack{

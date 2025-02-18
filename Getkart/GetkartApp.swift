@@ -11,7 +11,7 @@ import SwiftUI
 struct GetkartApp: App {
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            BaseView()
         }
     }
 }
