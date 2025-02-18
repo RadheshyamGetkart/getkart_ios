@@ -26,13 +26,21 @@ struct BaseView: View  {
                 }
                 .tag(1)
             
-           // AddPostView()
-                .tabItem {
-                    Image(systemName: "plus.circle.fill")
-                        .renderingMode(.original)
-                        .font(.system(size: 32))
-                }
-                .tag(2)
+            Button {
+                
+            } label: {
+                Image(systemName: "plus.circle.fill")
+                    .renderingMode(.original)
+                    .font(.system(size: 32))
+            }
+
+//            AddPostView()
+//                .tabItem {
+//                    Image(systemName: "plus.circle.fill")
+//                        .renderingMode(.original)
+//                        .font(.system(size: 32))
+//                }
+//                .tag(2)
             
             MyAdsView()
                 .tabItem {
@@ -116,5 +124,12 @@ enum TabbedItems: Int, CaseIterable{
         case .profile:
             return "profile-icon"
         }
+    }
+}
+
+
+struct AddPostView: View {
+    var body: some View {
+        Text("Add Post Screen")
     }
 }
