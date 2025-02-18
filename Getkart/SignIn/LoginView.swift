@@ -87,6 +87,7 @@ struct LoginView: View {
                     
                     HStack{
                         Button( action: loginWithEmailPhone){
+                            
                             Text("Continue")
                                 .font(Font.manrope(.bold, size: 15.0))
                                 

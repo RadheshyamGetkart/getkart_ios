@@ -22,6 +22,7 @@
 		297784052D63545100645E3A /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297784042D63545100645E3A /* ChatView.swift */; };
 		297784072D63546000645E3A /* MyAdsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297784062D63546000645E3A /* MyAdsView.swift */; };
 		297784092D63546C00645E3A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297784082D63546C00645E3A /* ProfileView.swift */; };
+		29D94E3A2D6496CC007D3649 /* BlockedUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D94E392D6496CC007D3649 /* BlockedUserView.swift */; };
 		389B85FE4CEFC530154EB9BB /* Pods_Getkart_GetkartUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA4A85840C461549FE6E462 /* Pods_Getkart_GetkartUITests.framework */; };
 		4008D7B8E7B8AC4BCDD18ECB /* Pods_GetkartTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BA73B30CCDFFA4E6DEA0C5 /* Pods_GetkartTests.framework */; };
 		B9693984043334DEC618A827 /* Pods_Getkart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD32E9CC83FEEDD0DEF8B35 /* Pods_Getkart.framework */; };
@@ -72,6 +73,7 @@
 		297784042D63545100645E3A /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		297784062D63546000645E3A /* MyAdsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAdsView.swift; sourceTree = "<group>"; };
 		297784082D63546C00645E3A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		29D94E392D6496CC007D3649 /* BlockedUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockedUserView.swift; sourceTree = "<group>"; };
 		2FD32E9CC83FEEDD0DEF8B35 /* Pods_Getkart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Getkart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35593C5C4623B7A5E7AFDF5D /* Pods-GetkartTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetkartTests.release.xcconfig"; path = "Target Support Files/Pods-GetkartTests/Pods-GetkartTests.release.xcconfig"; sourceTree = "<group>"; };
 		6EA4A85840C461549FE6E462 /* Pods_Getkart_GetkartUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Getkart_GetkartUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -202,6 +204,14 @@
 			path = "Profile View";
 			sourceTree = "<group>";
 		};
+		29D94E382D6496B7007D3649 /* Blocked User */ = {
+			isa = PBXGroup;
+			children = (
+				29D94E392D6496CC007D3649 /* BlockedUserView.swift */,
+			);
+			path = "Blocked User";
+			sourceTree = "<group>";
+		};
 		AEE366F37AB4924950F7D7C0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,6 +268,7 @@
 		F0CE65132D3794DC00F64674 /* Getkart */ = {
 			isa = PBXGroup;
 			children = (
+				29D94E382D6496B7007D3649 /* Blocked User */,
 				297784032D63543F00645E3A /* Profile View */,
 				297784022D63543300645E3A /* My Ads View */,
 				297784012D63542900645E3A /* Chat View */,
@@ -558,6 +569,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29D94E3A2D6496CC007D3649 /* BlockedUserView.swift in Sources */,
 				297783FD2D63527B00645E3A /* HomeView.swift in Sources */,
 				297784092D63546C00645E3A /* ProfileView.swift in Sources */,
 				297783E22D6300AD00645E3A /* Utility.swift in Sources */,

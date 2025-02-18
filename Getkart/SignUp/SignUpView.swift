@@ -18,11 +18,21 @@ struct SignUpView: View {
     var body: some View {
         
         VStack{
+            
+             
             ScrollView{
                 HStack{
                     Spacer()
-                    Button {
+                    NavigationLink(destination: BaseView().navigationBarBackButtonHidden(true)) {
                         
+                        Text("Skip")
+                            .font(Font.manrope(.medium, size: 18.0))
+                            .frame(width: 90,height: 32)
+                            .foregroundColor(Color(hex: " #fa7860"))
+                        
+                    }.background(Color(hex: "#f6e7e9")).cornerRadius(16.0)
+                  /*  Button {
+                        BaseView()
                     } label: {
                         
                         Text("Skip")
@@ -31,6 +41,8 @@ struct SignUpView: View {
                             .foregroundColor(Color(hex: " #fa7860"))
                         
                     }.background(Color(hex: "#f6e7e9")).cornerRadius(16.0)
+                    
+                    */
                 }
                 VStack (alignment: .leading) {
                     HStack{

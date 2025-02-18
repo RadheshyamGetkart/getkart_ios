@@ -57,8 +57,8 @@ struct MyAdsView: View {
             }
 
 
-        }
-        .navigationBarTitle("My Advertisement", displayMode:.automatic)
+        }.background(Color(.systemGray6))
+        //.navigationBarTitle(HStack{Text("My Advertisement")}, displayMode:.inline)
     }
 }
 

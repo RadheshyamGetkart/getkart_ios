@@ -12,7 +12,7 @@ struct ProfileView: View {
         
         VStack{
             
-            let keyWindow = UIApplication.shared.connectedScenes
+           /* let keyWindow = UIApplication.shared.connectedScenes
                 .filter({$0.activationState == .foregroundActive})
                 .compactMap({$0 as? UIWindowScene})
                 .first?.windows
@@ -22,7 +22,7 @@ struct ProfileView: View {
                 
                 Text("My Profile").padding(.leading,10)
                 Spacer()
-            }.frame(height:((keyWindow?.windowScene?.statusBarManager?.statusBarFrame.size.height ?? 0.0))).background()
+            }.frame(height:((keyWindow?.windowScene?.statusBarManager?.statusBarFrame.size.height ?? 0.0))).background()*/
             //+ 44.0
             ScrollView {
                 VStack(alignment: .leading, spacing: 5) {
