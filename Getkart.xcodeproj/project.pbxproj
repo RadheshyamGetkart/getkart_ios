@@ -30,6 +30,7 @@
 		F037AEC82D5B0C1D008F83A3 /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F037AEC72D5B0BFF008F83A3 /* OTPView.swift */; };
 		F07CC7692D648EFC0037BD5C /* MyLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07CC7682D648EEB0037BD5C /* MyLocationView.swift */; };
 		F07CC76B2D6499E70037BD5C /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07CC76A2D6499DF0037BD5C /* LocationManager.swift */; };
+		F07CC76E2D64A48C0037BD5C /* CountryLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07CC76D2D64A47A0037BD5C /* CountryLocationView.swift */; };
 		F0CE65152D3794DC00F64674 /* GetkartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CE65142D3794DC00F64674 /* GetkartApp.swift */; };
 		F0CE65172D3794DC00F64674 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CE65162D3794DC00F64674 /* LoginView.swift */; };
 		F0CE65192D3794DF00F64674 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0CE65182D3794DF00F64674 /* Assets.xcassets */; };
@@ -86,6 +87,7 @@
 		F037AEC72D5B0BFF008F83A3 /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
 		F07CC7682D648EEB0037BD5C /* MyLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLocationView.swift; sourceTree = "<group>"; };
 		F07CC76A2D6499DF0037BD5C /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		F07CC76D2D64A47A0037BD5C /* CountryLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryLocationView.swift; sourceTree = "<group>"; };
 		F0CE65112D3794DC00F64674 /* Getkart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Getkart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0CE65142D3794DC00F64674 /* GetkartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetkartApp.swift; sourceTree = "<group>"; };
 		F0CE65162D3794DC00F64674 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -232,10 +234,9 @@
 		F037AEC42D5B0BA4008F83A3 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
+				F07CC76C2D64A42E0037BD5C /* FetchLocation */,
 				F0CE65162D3794DC00F64674 /* LoginView.swift */,
 				F037AEC72D5B0BFF008F83A3 /* OTPView.swift */,
-				F07CC7682D648EEB0037BD5C /* MyLocationView.swift */,
-				F07CC76A2D6499DF0037BD5C /* LocationManager.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -247,6 +248,16 @@
 				297783EF2D63174E00645E3A /* Validator.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		F07CC76C2D64A42E0037BD5C /* FetchLocation */ = {
+			isa = PBXGroup;
+			children = (
+				F07CC76D2D64A47A0037BD5C /* CountryLocationView.swift */,
+				F07CC7682D648EEB0037BD5C /* MyLocationView.swift */,
+				F07CC76A2D6499DF0037BD5C /* LocationManager.swift */,
+			);
+			path = FetchLocation;
 			sourceTree = "<group>";
 		};
 		F0CE65082D3794DB00F64674 = {
@@ -588,6 +599,7 @@
 				297783FA2D634EFD00645E3A /* PrivacyView.swift in Sources */,
 				297784072D63546000645E3A /* MyAdsView.swift in Sources */,
 				F0CE65152D3794DC00F64674 /* GetkartApp.swift in Sources */,
+				F07CC76E2D64A48C0037BD5C /* CountryLocationView.swift in Sources */,
 				297784002D6353F700645E3A /* BaseView.swift in Sources */,
 				297783F02D63174E00645E3A /* Validator.swift in Sources */,
 				F037AEC82D5B0C1D008F83A3 /* OTPView.swift in Sources */,
