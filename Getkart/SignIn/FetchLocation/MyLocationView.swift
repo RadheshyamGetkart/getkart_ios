@@ -8,9 +8,13 @@ import SwiftUI
 
 struct MyLocationView: View {
     @StateObject private var locationManager = LocationManager()
+    @State private var navigateCountryLocation = false
     var body: some View {
-        NavigationView  {
             VStack {
+                NavigationLink(destination: CountryLocationView(), isActive: $navigateCountryLocation) {
+                    //EmptyView()
+                }
+                
                 HStack{
                     Image("myLocation")
                         .resizable()
@@ -62,7 +66,7 @@ struct MyLocationView: View {
                 
                 Spacer()
             }
-        }
+        
     }
     
     func findMyLocationAction(){
@@ -79,7 +83,7 @@ struct MyLocationView: View {
     }
     
     func otherLocationAction(){
-        
+        navigateCountryLocation = true
     }
 }
 

@@ -138,7 +138,7 @@ struct LoginView: View {
                         Button(action:signInWithGoogle) {
                             HStack{
                                 Spacer()
-                                Image("login_Google").resizable().frame(width: 10,height: 10)
+                                Image("login_Google").resizable().frame(width: 20,height: 20)
                                     .padding(.trailing ,5)
                                 Text("Continue with Google")
                                     .font(Font.manrope(.bold, size: 18.0))
@@ -151,7 +151,7 @@ struct LoginView: View {
                                 
                             }.overlay(
                                 RoundedRectangle(cornerRadius: 10)
-                                    .stroke(Color.black, lineWidth: 1))
+                                    .stroke(Color.black, lineWidth: 0.5))
                             .padding()
                             
                             

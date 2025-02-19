@@ -11,6 +11,7 @@ struct OTPView: View {
     @State var otp: String = ""
     @Environment(\.presentationMode) var presentationMode
     @State private var navigateMyLocation = false
+    
     var body: some View {
         VStack {
             NavigationLink(destination: MyLocationView(), isActive: $navigateMyLocation) {
