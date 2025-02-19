@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct ProfileView: View {
+    @EnvironmentObject var authManager: AuthManager
+
+    @Environment(\.presentationMode) var presentationMode
+
     var body: some View {
         
         VStack{
@@ -39,7 +43,11 @@ struct ProfileView: View {
                                 .foregroundColor(.gray)
                         }
                         Spacer()
-                        Button(action: {}) {
+                        Button(action: {
+                            print("Login")
+                            authManager.logout()
+                           // presentationMode.wrappedValue.dismiss()
+                        }) {
                             Text("Login")
                                 .padding().frame(width: 100, height: 35)
                                 .overlay(
@@ -66,17 +74,23 @@ struct ProfileView: View {
                         
                     }
                     ProfileToggleOption(icon: "dark_theme", text: "Dark Theme")
+                    
                     ProfileOption(icon: "notification", text: "Notifications").onTapGesture {
                         
                     }
-                    ProfileOption(icon: "article", text: "Blogs").onTapGesture {
+                    
+                    NavigationLink(destination: PrivacyView(title: "Blogs", type: .blogs).navigationBarBackButtonHidden(true)) {
+
+                    ProfileOption(icon: "article", text: "Blogs")
                         
                     }
                     ProfileOption(icon: "like_fill", text: "Favorites").onTapGesture {
                         
                     }
 
-                    ProfileOption(icon: "doc.text.fill", text: "FAQs").onTapGesture {
+                    NavigationLink(destination: PrivacyView(title: "FAQs", type: .faq).navigationBarBackButtonHidden(true)) {
+
+                    ProfileOption(icon: "doc.text.fill", text: "FAQs")
                         
                     }
 
@@ -91,18 +105,30 @@ struct ProfileView: View {
                         
                     }
                     
-                    ProfileOption(icon: "about_us", text: "About us").onTapGesture {
+                    NavigationLink(destination: PrivacyView(title: "About us", type: .aboutUs).navigationBarBackButtonHidden(true)) {
+
+                    ProfileOption(icon: "about_us", text: "About us")
                         
                     }
-                    ProfileOption(icon: "t_c", text: "Terms & Conditions").onTapGesture {
+                    
+                    NavigationLink(destination: PrivacyView(title: "Terms of Service", type: .termsAndConditions).navigationBarBackButtonHidden(true)) {
+
+                    ProfileOption(icon: "t_c", text: "Terms & Conditions")
                         
                     }
-                    ProfileOption(icon: "privacypolicy", text: "Privacy Policy").onTapGesture {
+                    NavigationLink(destination: PrivacyView(title: "Privacy Policy", type: .privacy).navigationBarBackButtonHidden(true)) {
+                        
+                        ProfileOption(icon: "privacypolicy", text: "Privacy Policy")
+                    }
+                    
+                    
+                    NavigationLink(destination: PrivacyView(title: "Privacy Policy", type: .refundAndCancellationPolicy).navigationBarBackButtonHidden(true)) {
+
+                    ProfileOption(icon: "privacypolicy", text: "Refunds & Cancellation policy")
                         
                     }
-                    ProfileOption(icon: "privacypolicy", text: "Refunds & Cancellation policy").onTapGesture {
-                        
-                    }
+                    
+                    
                     
                     //delete_account
                   
@@ -113,7 +139,11 @@ struct ProfileView: View {
             }
             .background(Color(.systemGray6))
 
-        }
+        } 
+
+            .onAppear{
+                
+            }
     }
 }
 
@@ -136,7 +166,7 @@ struct ProfileOption: View {
                 .frame(width: 30, height: 30)
                 .background(Color(.systemYellow).opacity(0.2))
                 .cornerRadius(8)
-            Text(text)
+            Text(text).foregroundColor(.black)
                 .font(.body)
             Spacer()
             Image(systemName: "chevron.right")

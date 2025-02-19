@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct SignUpView: View {
-    
+    @EnvironmentObject var authManager: AuthManager
+    @Environment(\.presentationMode) var presentationMode
+
     @State private var email: String = ""
     @State private var username: String = ""
     @State private var password: String = ""
     @State private var showError: Bool = false
-    @Binding var navigateToSignUp: Bool
+   // @Binding var navigateToSignUp: Bool
 
     var body: some View {
         
@@ -23,16 +25,16 @@ struct SignUpView: View {
             ScrollView{
                 HStack{
                     Spacer()
-                    NavigationLink(destination: BaseView().navigationBarBackButtonHidden(true)) {
-                        
-                        Text("Skip")
-                            .font(Font.manrope(.medium, size: 18.0))
-                            .frame(width: 90,height: 32)
-                            .foregroundColor(Color(hex: " #fa7860"))
-                        
-                    }.background(Color(hex: "#f6e7e9")).cornerRadius(16.0)
-                  /*  Button {
-                        BaseView()
+//                    NavigationLink(destination: BaseView() .environmentObject(authManager).navigationBarBackButtonHidden(true)) {
+//                        
+//                        Text("Skip")
+//                            .font(Font.manrope(.medium, size: 18.0))
+//                            .frame(width: 90,height: 32)
+//                            .foregroundColor(Color(hex: " #fa7860"))
+//                        
+//                    }.background(Color(hex: "#f6e7e9")).cornerRadius(16.0)
+                    Button {
+                        authManager.login()
                     } label: {
                         
                         Text("Skip")
@@ -42,7 +44,7 @@ struct SignUpView: View {
                         
                     }.background(Color(hex: "#f6e7e9")).cornerRadius(16.0)
                     
-                    */
+                    
                 }
                 VStack (alignment: .leading) {
                     HStack{
@@ -141,8 +143,9 @@ struct SignUpView: View {
                         .foregroundColor(.gray)
                     
                     Button(action: {
-                        
-                        self.navigateToSignUp = false
+                       
+                        presentationMode.wrappedValue.dismiss()
+
                     }) {
                         Text("Log in").foregroundColor(Color(hex: " #fa7860")).underline().font(Font.manrope(.medium, size: 16.0))
                             .foregroundColor(.blue)
@@ -186,17 +189,18 @@ struct SignUpView: View {
                     .padding(.top, 15)
                 
                 HStack{
-                    Button {
-                        
-                    } label: {
-                        Text("Terms of Service").underline().foregroundColor(Color(hex: " #fa7860")).font(Font.manrope(.medium, size: 14.0))
-                    }
                     
+                     NavigationLink(destination: PrivacyView(title: "Terms of Service", type: .termsAndConditions).navigationBarBackButtonHidden(true)) {
+
+                            Text("Terms of Service").underline().foregroundColor(Color(hex: " #fa7860")).font(Font.manrope(.medium, size: 14.0))
+                        
+                    }
                     Text("and").font(Font.manrope(.regular, size: 14.0)).foregroundColor(.gray)
                     
-                    Button {
-                        
-                    } label: {
+                    
+                    
+                    NavigationLink(destination: PrivacyView(title: "Privacy Policy", type: .privacy).navigationBarBackButtonHidden(true)) {
+
                         Text("Privacy Policy").underline().foregroundColor(Color(hex: " #fa7860")).font(Font.manrope(.regular, size: 14.0))
                     }
                     
@@ -213,7 +217,9 @@ struct SignUpView: View {
     
 
 #Preview {
-    SignUpView(navigateToSignUp: .constant(false))
+//    SignUpView(navigateToSignUp: .constant(false))
+    SignUpView()
+
 }
 
 

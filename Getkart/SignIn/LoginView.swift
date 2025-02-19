@@ -11,10 +11,18 @@ import GoogleSignIn
 import AuthenticationServices
 
 struct LoginView: View {
+    @EnvironmentObject var authManager: AuthManager
+
+    @StateObject private var coordinator = NavigationCoordinator()
+
     @State private var emailPhone: String = "naresh.kumar@getkart.com"
     @State private var navigateToOTP = false
     @State private var navigateToSignUp = false
+   
+    
     var body: some View {
+        
+       
         NavigationView  {
             VStack {
                 
@@ -22,15 +30,16 @@ struct LoginView: View {
                 NavigationLink(destination: OTPView(emailPhone: emailPhone), isActive: $navigateToOTP) {
                                    //EmptyView()
                                }
-                NavigationLink(destination: SignUpView(navigateToSignUp:$navigateToSignUp).navigationBarBackButtonHidden(true), isActive: $navigateToSignUp) {
-                                   //EmptyView()
-                               }
+//                NavigationLink(destination: SignUpView(navigateToSignUp:$navigateToSignUp) .environmentObject(authManager).navigationBarBackButtonHidden(true), isActive: $navigateToSignUp) {
+//                                   //EmptyView()
+//                               }
                                
                 ScrollView{
                     HStack{
                         Spacer()
                         Button( action: {
-                            
+                            authManager.login()
+
                         }){
                             Text("Skip")
                                 .multilineTextAlignment(.center)
@@ -105,9 +114,13 @@ struct LoginView: View {
                         Text("Don't have an account?")
                             .font(Font.manrope(.regular, size: 12.0))
                             .padding(.top ,10)
-                        Button(action:{
-                            navigateToSignUp = true
-                        }){
+                        
+                        NavigationLink(destination: SignUpView() .environmentObject(authManager).navigationBarHidden(true)) {
+//
+//
+//                        Button(action:{
+//                            navigateToSignUp = true
+//                        }){
                             Text("Sign up")
                                 .font(Font.manrope(.regular, size: 12.0))
                                 .foregroundColor(.orange)
@@ -183,27 +196,39 @@ struct LoginView: View {
                 
                 HStack {
                     Spacer()
-                    Button(action:{
-                        
-                    }){
-                        Text("Terms of Service")
-                            .font(Font.manrope(.regular, size: 12.0))
-                            .foregroundColor(.orange)
-                            .underline()
-                    }
                     
+                    NavigationLink(destination: PrivacyView(title: "Terms of Service", type: .termsAndConditions).navigationBarBackButtonHidden(true)) {
+
+                           Text("Terms of Service").underline().foregroundColor(Color(hex: " #fa7860")).font(Font.manrope(.medium, size: 12.0))
+                       
+                   }
+//                    Button(action:{
+//                        
+//                    }){
+//                        Text("Terms of Service")
+//                            .font(Font.manrope(.regular, size: 12.0))
+//                            .foregroundColor(.orange)
+//                            .underline()
+//                    }
+//                    
                     Text("and")
                         .font(Font.manrope(.regular, size: 12.0))
                     
                     
-                    Button(action:{
-                        
-                    }){
-                        Text("Privacy Policy")
-                            .font(Font.manrope(.regular, size: 12.0))
-                            .foregroundColor(.orange)
-                            .underline()
-                    }
+                    NavigationLink(destination: PrivacyView(title: "Privacy Policy", type: .privacy).navigationBarBackButtonHidden(true)) {
+
+                           Text("Privacy Policy").underline().foregroundColor(Color(hex: " #fa7860")).font(Font.manrope(.medium, size: 12.0))
+                       
+                   }
+                    
+//                    Button(action:{
+//                        
+//                    }){
+//                        Text("Privacy Policy")
+//                            .font(Font.manrope(.regular, size: 12.0))
+//                            .foregroundColor(.orange)
+//                            .underline()
+//                    }
                     Spacer()
                 }
                 
@@ -212,6 +237,7 @@ struct LoginView: View {
             .padding()
             
         }
+        
     }
     func loginWithEmailPhone(){
         print("Text entered", $emailPhone.wrappedValue)

@@ -17,28 +17,35 @@ struct ChatView: View {
         VStack{
             HStack(spacing: 0){
                 VStack{
+                    Spacer()
+
                     Button {
                         selectedTab = 0
                     } label: {
                         Text("Buying").font(Font.manrope(.bold, size: 17)).foregroundColor((selectedTab == 0) ? Color.black : Color.gray)
                     }
+                    Spacer()
+
                     Divider().frame(height: 2).background((selectedTab == 0) ? Color.black : Color.gray)
                 }
                 
                 VStack{
+                    Spacer()
+
                     Button {
                         selectedTab = 1
                     } label: {
                         Text("Selling").font(Font.manrope(.bold, size: 17)).foregroundColor((selectedTab == 1) ? Color.black : Color.gray)
                     }
+                    Spacer()
                     Divider().frame(height: 2).background((selectedTab == 1) ? Color.black : Color.gray)
                 }
                 
             }.frame(height: 45)
             
-        
+            
             ScrollView {
-              
+                
                 VStack(alignment: .leading, spacing: 10) {
                     
                     PurchaseView(name: "Nitish Kulkarni", item: "MI Android TV", icon: "delete_illustrator")
@@ -53,6 +60,53 @@ struct ChatView: View {
             
             Spacer()
         }.background(Color(.systemGray6))
+            .navigationBarBackButtonHidden(true)
+            .navigationTitle("")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+
+                // 2
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    
+                    NavigationLink(destination: BlockedUserView().navigationBarBackButtonHidden(true)) {
+                        
+                        Image("blockuser")
+                        
+                    }
+                    
+                }
+                
+                ToolbarItem(placement: .principal) {
+                    HStack {
+                        Text("Chats").font(Font.manrope(.bold, size: 20))
+                            .foregroundColor(.black)
+                        Spacer()
+                    }
+                }
+
+            }
+
+           /* .toolbar{
+                ToolbarItem(placement: .principal) {
+                    HStack {
+                        Text("Chats").font(Font.manrope(.bold, size: 20))
+                            .foregroundColor(.black)
+                        Spacer()
+                    }
+                }
+                
+//                Spacer()
+//                
+//                ToolbarItem(placement: .navigationBarLeading) {
+//                    
+//                    NavigationLink(destination: BlockedUserView().navigationBarBackButtonHidden(true)) {
+//                        
+//                        Image("blockuser")
+//                        
+//                    }
+//                }
+                
+            }*/
     }
 }
 

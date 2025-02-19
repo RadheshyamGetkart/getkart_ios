@@ -7,6 +7,8 @@
 
 import Foundation
 import SwiftUICore
+import UIKit
+
 
 extension Font {
     enum ManropeFont {
